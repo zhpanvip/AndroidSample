@@ -15,14 +15,14 @@ class FragmentActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_fragment)
+        view_pager.offscreenPageLimit=2
         view_pager.adapter = object : FragmentStateAdapter(this) {
             override fun getItemCount(): Int {
                 return Card.DECK.size
             }
 
             override fun createFragment(position: Int): Fragment {
-                return TestFragment.getInstance(Card.DECK[position])
-
+                return TestFragment.getInstance(Card.DECK[position],position)
             }
         }
     }
