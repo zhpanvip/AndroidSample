@@ -1,25 +1,23 @@
-package com.zhpan.viewpagersample
+package com.zhpan.viewpagersample.activity
 
 import androidx.appcompat.app.AppCompatActivity
-import androidx.viewpager2.widget.ViewPager2
-
 import android.os.Bundle
-import android.util.Log
 import android.view.View
-import android.view.ViewGroup
 import android.widget.Toast
-import androidx.constraintlayout.widget.ConstraintLayout
 import androidx.recyclerview.widget.RecyclerView
 import androidx.viewpager2.widget.CompositePageTransformer
 import androidx.viewpager2.widget.MarginPageTransformer
-
+import androidx.viewpager2.widget.ViewPager2
+import com.zhpan.viewpagersample.R
+import com.zhpan.viewpagersample.ScaleInTransformer
+import com.zhpan.viewpagersample.adapter.MyAdapter
 import java.util.ArrayList
 
-class MainActivity : AppCompatActivity() {
+class PagerActivity : AppCompatActivity() {
     private lateinit var viewPager2: ViewPager2
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
+        setContentView(R.layout.activity_pager)
         viewPager2 = findViewById(R.id.view_pager)
         val myAdapter = MyAdapter()
         myAdapter.setList(data)
@@ -43,7 +41,7 @@ class MainActivity : AppCompatActivity() {
         viewPager2.registerOnPageChangeCallback(object : ViewPager2.OnPageChangeCallback() {
             override fun onPageSelected(position: Int) {
                 super.onPageSelected(position)
-                Toast.makeText(this@MainActivity, "page selected $position", Toast.LENGTH_SHORT).show()
+                Toast.makeText(this@PagerActivity, "page selected $position", Toast.LENGTH_SHORT).show()
             }
         })
 //        viewPager2.isUserInputEnabled = false
