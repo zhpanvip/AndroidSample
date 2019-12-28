@@ -5,10 +5,10 @@
     android:layout_width="match_parent"
     android:id="@+id/cl_main"
     android:layout_height="match_parent"
-    tools:context=".activity.PagerActivity">
+    tools:context=".activity.VP2ViewsActivity">
 
     <androidx.viewpager2.widget.ViewPager2
-        android:id="@+id/view_pager"
+        android:id="@+id/view_pager2"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         app:layout_constraintBottom_toBottomOf="parent"

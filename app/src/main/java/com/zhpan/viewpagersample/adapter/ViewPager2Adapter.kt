@@ -16,7 +16,7 @@ import java.util.ArrayList
  * Description:
 </pre> *
  */
-class MyAdapter : RecyclerView.Adapter<MyAdapter.PagerViewHolder>() {
+class ViewPager2Adapter : RecyclerView.Adapter<ViewPager2Adapter.PagerViewHolder>() {
     private var mList: List<Int> = ArrayList()
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): PagerViewHolder {
         val itemView = LayoutInflater.from(parent.context).inflate(R.layout.item_page, parent, false)

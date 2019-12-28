@@ -10,16 +10,16 @@ import androidx.viewpager2.widget.MarginPageTransformer
 import androidx.viewpager2.widget.ViewPager2
 import com.zhpan.viewpagersample.R
 import com.zhpan.viewpagersample.ScaleInTransformer
-import com.zhpan.viewpagersample.adapter.MyAdapter
+import com.zhpan.viewpagersample.adapter.ViewPager2Adapter
 import java.util.ArrayList
 
-class PagerActivity : AppCompatActivity() {
+class VP2ViewsActivity : AppCompatActivity() {
     private lateinit var viewPager2: ViewPager2
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_pager)
-        viewPager2 = findViewById(R.id.view_pager)
-        val myAdapter = MyAdapter()
+        viewPager2 = findViewById(R.id.view_pager2)
+        val myAdapter = ViewPager2Adapter()
         myAdapter.setList(data)
         viewPager2.adapter = myAdapter
         viewPager2.apply {
@@ -41,7 +41,7 @@ class PagerActivity : AppCompatActivity() {
         viewPager2.registerOnPageChangeCallback(object : ViewPager2.OnPageChangeCallback() {
             override fun onPageSelected(position: Int) {
                 super.onPageSelected(position)
-                Toast.makeText(this@PagerActivity, "page selected $position", Toast.LENGTH_SHORT).show()
+                Toast.makeText(this@VP2ViewsActivity, "page selected $position", Toast.LENGTH_SHORT).show()
             }
         })
 //        viewPager2.isUserInputEnabled = false

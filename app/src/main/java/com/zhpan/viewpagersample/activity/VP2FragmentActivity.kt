@@ -10,7 +10,7 @@ import com.zhpan.viewpagersample.R
 import com.zhpan.viewpagersample.fragment.TestFragment
 import kotlinx.android.synthetic.main.activity_fragment.*
 
-class FragmentActivity : AppCompatActivity() {
+class VP2FragmentActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)

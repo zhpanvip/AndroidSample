@@ -31,4 +31,18 @@
         android:onClick="onClick"
         android:text="@string/viewpager_with_views" />
 
+    <View
+        android:layout_width="match_parent"
+        android:background="#DDDDDD"
+        android:layout_height="0.5dp"/>
+
+    <TextView
+        android:id="@+id/btn_view_pager"
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:layout_height="45dp"
+        android:background="#FFFFFF"
+        android:onClick="onClick"
+        android:text="@string/view_pager" />
+
 </LinearLayout>

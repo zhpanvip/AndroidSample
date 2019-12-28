@@ -1,4 +1,5 @@
 <resources>
     <string name="app_name">ViewPager2</string>
     <string name="viewpager_with_views">ViewPager with Views</string>
+    <string name="view_pager">ViewPager</string>
 </resources>
