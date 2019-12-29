@@ -17,7 +17,7 @@ import androidx.viewpager2.integration.testapp.cards.CardView
  * Description:
 </pre> *
  */
-class TestVPFragment : Fragment() {
+class TestLifecycleFragment : Fragment() {
     private var position: Int = 0
 
     override fun onAttach(context: Context) {
@@ -94,8 +94,8 @@ class TestVPFragment : Fragment() {
 
         private const val KEY_POSITION = "position"
 
-        fun getInstance(card: Card, position: Int): TestVPFragment {
-            val fragment = TestVPFragment()
+        fun getInstance(card: Card, position: Int): TestLifecycleFragment {
+            val fragment = TestLifecycleFragment()
             val bundle = card.toBundle()
             bundle.putInt(KEY_POSITION, position)
             fragment.arguments = bundle

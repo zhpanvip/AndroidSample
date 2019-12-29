@@ -9,7 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".activity.VPFragmentActivity"></activity>
+        <activity android:name=".activity.FragmentLifecycleActivity"></activity>
+        <activity android:name=".activity.VPFragmentActivity" />
         <activity android:name=".activity.VP2ViewsActivity" />
         <activity android:name=".activity.VP2FragmentActivity" />
         <activity android:name=".activity.MainActivity">

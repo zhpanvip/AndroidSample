@@ -22,6 +22,7 @@ class MainActivity : AppCompatActivity() {
         return when (view.id) {
             R.id.btn_pager_fragment -> VP2FragmentActivity::class.java
             R.id.btn_view_pager -> VPFragmentActivity::class.java
+            R.id.btn_fragment_lifecycle -> FragmentLifecycleActivity::class.java
             else -> VP2ViewsActivity::class.java
         }
     }

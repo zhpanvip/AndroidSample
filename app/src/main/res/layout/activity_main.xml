@@ -1,48 +1,60 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/cl_main"
-    android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context=".activity.MainActivity">
 
     <TextView
         android:id="@+id/btn_pager_view"
         android:layout_width="match_parent"
-        android:gravity="center"
         android:layout_height="45dp"
         android:background="#FFFFFF"
+        android:gravity="center"
         android:onClick="onClick"
         android:text="@string/viewpager_with_views" />
 
     <View
         android:layout_width="match_parent"
-        android:background="#DDDDDD"
-        android:layout_height="0.5dp"/>
+        android:layout_height="0.5dp"
+        android:background="#DDDDDD" />
 
     <TextView
         android:id="@+id/btn_pager_fragment"
         android:layout_width="match_parent"
-        android:gravity="center"
         android:layout_height="45dp"
         android:background="#FFFFFF"
+        android:gravity="center"
         android:onClick="onClick"
-        android:text="@string/viewpager_with_views" />
+        android:text="ViewPager With Fragment" />
 
     <View
         android:layout_width="match_parent"
-        android:background="#DDDDDD"
-        android:layout_height="0.5dp"/>
+        android:layout_height="0.5dp"
+        android:background="#DDDDDD" />
 
     <TextView
         android:id="@+id/btn_view_pager"
         android:layout_width="match_parent"
-        android:gravity="center"
         android:layout_height="45dp"
         android:background="#FFFFFF"
+        android:gravity="center"
         android:onClick="onClick"
-        android:text="@string/view_pager" />
+        android:text="ViewPager2 With Fragment" />
 
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#DDDDDD" />
+
+    <TextView
+        android:id="@+id/btn_fragment_lifecycle"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="#FFFFFF"
+        android:gravity="center"
+        android:onClick="onClick"
+        android:text="ViewPager2 With Fragment" />
 </LinearLayout>

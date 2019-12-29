@@ -2,10 +2,8 @@ package com.zhpan.viewpagersample.adapter;
 
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
-import androidx.fragment.app.FragmentActivity;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentStatePagerAdapter;
-import androidx.viewpager2.adapter.FragmentStateAdapter;
 import androidx.viewpager2.integration.testapp.cards.Card;
 
 import com.zhpan.viewpagersample.fragment.TestFragment;
