@@ -20,8 +20,8 @@ class MainActivity : AppCompatActivity() {
 
     private fun getIntentActivity(view: View): Class<out Activity>? {
         return when (view.id) {
-            R.id.btn_pager_fragment -> VP2FragmentActivity::class.java
-            R.id.btn_view_pager -> VPFragmentActivity::class.java
+            R.id.btn_view_pager2_fragment -> VP2FragmentActivity::class.java
+            R.id.btn_view_pager_fragment -> VPFragmentActivity::class.java
             R.id.btn_fragment_lifecycle -> FragmentLifecycleActivity::class.java
             else -> VP2ViewsActivity::class.java
         }

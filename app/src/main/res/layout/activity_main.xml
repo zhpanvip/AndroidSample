@@ -8,21 +8,7 @@
     tools:context=".activity.MainActivity">
 
     <TextView
-        android:id="@+id/btn_pager_view"
-        android:layout_width="match_parent"
-        android:layout_height="45dp"
-        android:background="#FFFFFF"
-        android:gravity="center"
-        android:onClick="onClick"
-        android:text="@string/viewpager_with_views" />
-
-    <View
-        android:layout_width="match_parent"
-        android:layout_height="0.5dp"
-        android:background="#DDDDDD" />
-
-    <TextView
-        android:id="@+id/btn_pager_fragment"
+        android:id="@+id/btn_view_pager_fragment"
         android:layout_width="match_parent"
         android:layout_height="45dp"
         android:background="#FFFFFF"
@@ -36,7 +22,21 @@
         android:background="#DDDDDD" />
 
     <TextView
-        android:id="@+id/btn_view_pager"
+        android:id="@+id/btn_pager_view2"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="#FFFFFF"
+        android:gravity="center"
+        android:onClick="onClick"
+        android:text="@string/viewpager_with_views" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#DDDDDD" />
+
+    <TextView
+        android:id="@+id/btn_view_pager2_fragment"
         android:layout_width="match_parent"
         android:layout_height="45dp"
         android:background="#FFFFFF"
@@ -56,5 +56,5 @@
         android:background="#FFFFFF"
         android:gravity="center"
         android:onClick="onClick"
-        android:text="ViewPager2 With Fragment" />
+        android:text="Fragment MaxLifecycle" />
 </LinearLayout>
