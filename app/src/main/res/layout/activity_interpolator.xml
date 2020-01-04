@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context=".animation.InterpolatorActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal"
+        android:weightSum="5">
+
+        <com.zhpan.sample.common.ItemView
+            android:id="@+id/btn_accelerate"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:onClick="onClick"
+            app:item_text="accelerate" />
+
+        <com.zhpan.sample.common.ItemView
+            android:id="@+id/btn_decelerate"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:onClick="onClick"
+            app:item_text="decelerate" />
+
+        <com.zhpan.sample.common.ItemView
+            android:id="@+id/btn_bounce"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:onClick="onClick"
+            app:item_text="bounce" />
+
+        <com.zhpan.sample.common.ItemView
+            android:id="@+id/btn_anticipate"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:onClick="onClick"
+            app:item_text="anticipate" />
+
+        <com.zhpan.sample.common.ItemView
+            android:id="@+id/btn_overshoot"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:onClick="onClick"
+            app:item_text="anticipate" />
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="150dp">
+
+        <View
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+            android:background="@color/colorPrimary" />
+
+        <com.zhpan.sample.common.CircleView
+            android:id="@+id/circle_view"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center" />
+    </FrameLayout>
+
+
+</LinearLayout>

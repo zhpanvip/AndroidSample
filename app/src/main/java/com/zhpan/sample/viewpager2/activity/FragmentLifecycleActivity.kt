@@ -1,4 +1,4 @@
-package com.zhpan.viewpagersample.activity
+package com.zhpan.sample.viewpager2.activity
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -6,8 +6,8 @@ import android.view.View
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.Lifecycle
 import androidx.viewpager2.integration.testapp.cards.Card
-import com.zhpan.viewpagersample.R
-import com.zhpan.viewpagersample.fragment.TestLifecycleFragment
+import com.zhpan.sample.R
+import com.zhpan.sample.viewpager2.fragment.TestLifecycleFragment
 
 class FragmentLifecycleActivity : AppCompatActivity() {
     private lateinit var fragment: Fragment

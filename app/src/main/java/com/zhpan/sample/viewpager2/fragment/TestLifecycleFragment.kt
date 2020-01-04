@@ -1,4 +1,4 @@
-package com.zhpan.viewpagersample.fragment
+package com.zhpan.sample.viewpager2.fragment
 
 import android.content.Context
 import android.os.Bundle

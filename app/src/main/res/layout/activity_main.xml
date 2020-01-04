@@ -1,60 +1,34 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/cl_main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    tools:context=".activity.MainActivity">
+    tools:context=".MainActivity">
 
-    <TextView
-        android:id="@+id/btn_view_pager_fragment"
+    <LinearLayout
+        android:id="@+id/ll_main"
         android:layout_width="match_parent"
-        android:layout_height="45dp"
-        android:background="#FFFFFF"
-        android:gravity="center"
-        android:onClick="onClick"
-        android:text="ViewPager With Fragment" />
+        android:layout_height="match_parent"
+        android:orientation="vertical">
 
-    <View
-        android:layout_width="match_parent"
-        android:layout_height="0.5dp"
-        android:background="#DDDDDD" />
+        <com.zhpan.sample.common.ItemView
+            android:id="@+id/item_view_pager"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FFFFFF"
+            android:gravity="center"
+            android:onClick="onClick"
+            app:item_text="ViewPager2" />
 
-    <TextView
-        android:id="@+id/btn_pager_view2"
-        android:layout_width="match_parent"
-        android:layout_height="45dp"
-        android:background="#FFFFFF"
-        android:gravity="center"
-        android:onClick="onClick"
-        android:text="@string/viewpager_with_views" />
+        <com.zhpan.sample.common.ItemView
+            android:id="@+id/item_animation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FFFFFF"
+            android:gravity="center"
+            android:onClick="onClick"
+            app:item_text="Animation" />
 
-    <View
-        android:layout_width="match_parent"
-        android:layout_height="0.5dp"
-        android:background="#DDDDDD" />
-
-    <TextView
-        android:id="@+id/btn_view_pager2_fragment"
-        android:layout_width="match_parent"
-        android:layout_height="45dp"
-        android:background="#FFFFFF"
-        android:gravity="center"
-        android:onClick="onClick"
-        android:text="ViewPager2 With Fragment" />
-
-    <View
-        android:layout_width="match_parent"
-        android:layout_height="0.5dp"
-        android:background="#DDDDDD" />
-
-    <TextView
-        android:id="@+id/btn_fragment_lifecycle"
-        android:layout_width="match_parent"
-        android:layout_height="45dp"
-        android:background="#FFFFFF"
-        android:gravity="center"
-        android:onClick="onClick"
-        android:text="Fragment MaxLifecycle" />
-</LinearLayout>
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>

@@ -1,4 +1,4 @@
-package com.zhpan.viewpagersample.activity
+package com.zhpan.sample.viewpager2.activity
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -8,9 +8,9 @@ import androidx.recyclerview.widget.RecyclerView
 import androidx.viewpager2.widget.CompositePageTransformer
 import androidx.viewpager2.widget.MarginPageTransformer
 import androidx.viewpager2.widget.ViewPager2
-import com.zhpan.viewpagersample.R
-import com.zhpan.viewpagersample.ScaleInTransformer
-import com.zhpan.viewpagersample.adapter.ViewPager2Adapter
+import com.zhpan.sample.R
+import com.zhpan.sample.viewpager2.ScaleInTransformer
+import com.zhpan.sample.viewpager2.adapter.ViewPager2Adapter
 import java.util.ArrayList
 
 class VP2ViewsActivity : AppCompatActivity() {

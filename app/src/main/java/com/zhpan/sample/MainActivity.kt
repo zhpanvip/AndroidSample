@@ -1,4 +1,4 @@
-package com.zhpan.viewpagersample.activity
+package com.zhpan.sample
 
 import android.app.Activity
 import android.content.Intent
@@ -6,7 +6,8 @@ import androidx.appcompat.app.AppCompatActivity
 
 import android.os.Bundle
 import android.view.View
-import com.zhpan.viewpagersample.R
+import com.zhpan.sample.animation.AnimateEntryActivity
+import com.zhpan.sample.viewpager2.activity.*
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -20,10 +21,9 @@ class MainActivity : AppCompatActivity() {
 
     private fun getIntentActivity(view: View): Class<out Activity>? {
         return when (view.id) {
-            R.id.btn_view_pager2_fragment -> VP2FragmentActivity::class.java
-            R.id.btn_view_pager_fragment -> VPFragmentActivity::class.java
-            R.id.btn_fragment_lifecycle -> FragmentLifecycleActivity::class.java
-            else -> VP2ViewsActivity::class.java
+            R.id.item_view_pager -> ViewPager2EntryActivity::class.java
+            R.id.item_animation -> AnimateEntryActivity::class.java
+            else -> ViewPager2EntryActivity::class.java
         }
     }
 }

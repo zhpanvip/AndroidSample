@@ -22,7 +22,7 @@ import android.view.ViewGroup
 import android.widget.TextView
 
 import androidx.annotation.ColorRes
-import com.zhpan.viewpagersample.R
+import com.zhpan.sample.R
 
 
 /** Inflates and populates a [View] representing a [Card]  */

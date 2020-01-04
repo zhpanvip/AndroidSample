@@ -1,4 +1,4 @@
-package com.zhpan.viewpagersample;
+package com.zhpan.sample;
 
 import org.junit.Test;
 

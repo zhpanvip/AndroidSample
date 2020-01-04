@@ -1,4 +1,4 @@
-package com.zhpan.viewpagersample.adapter
+package com.zhpan.sample.viewpager2.adapter
 
 import android.graphics.Color
 import android.view.LayoutInflater
@@ -6,7 +6,7 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
-import com.zhpan.viewpagersample.R
+import com.zhpan.sample.R
 
 import java.util.ArrayList
 

@@ -1,9 +1,6 @@
-package com.zhpan.viewpagersample
+package com.zhpan.sample.viewpager2
 
-import android.annotation.TargetApi
-import android.os.Build
 import android.view.View
-import androidx.viewpager.widget.ViewPager
 import androidx.viewpager2.widget.ViewPager2
 import java.lang.Math.abs
 

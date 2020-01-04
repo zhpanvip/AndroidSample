@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.zhpan.viewpagersample">
+    package="com.zhpan.sample">
 
     <application
         android:allowBackup="true"
@@ -9,11 +9,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".activity.FragmentLifecycleActivity"></activity>
-        <activity android:name=".activity.VPFragmentActivity" />
-        <activity android:name=".activity.VP2ViewsActivity" />
-        <activity android:name=".activity.VP2FragmentActivity" />
-        <activity android:name=".activity.MainActivity">
+        <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <action android:name="android.intent.action.VIEW" />
@@ -21,6 +17,18 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <activity android:name=".animation.InterpolatorActivity" />
+        <activity android:name=".animation.ValueAnimatorActivity" />
+        <activity android:name=".animation.PropertyEntryActivity" />
+        <activity android:name=".animation.ViewAnimationActivity" />
+        <activity android:name=".animation.ObjectAnimationActivity" />
+        <activity android:name=".animation.AnimateEntryActivity" />
+        <activity android:name=".viewpager2.activity.ViewPager2EntryActivity" />
+        <activity android:name=".viewpager2.activity.FragmentLifecycleActivity" />
+        <activity android:name=".viewpager2.activity.VPFragmentActivity" />
+        <activity android:name=".viewpager2.activity.VP2ViewsActivity" />
+        <activity android:name=".viewpager2.activity.VP2FragmentActivity" />
     </application>
 
 </manifest>

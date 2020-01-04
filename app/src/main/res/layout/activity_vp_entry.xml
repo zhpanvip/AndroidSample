@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cl_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <com.zhpan.sample.common.ItemView
+        android:id="@+id/btn_view_pager_fragment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFF"
+        android:gravity="center"
+        android:onClick="onClick"
+        app:item_text="ViewPager With Fragment" />
+
+
+    <com.zhpan.sample.common.ItemView
+        android:id="@+id/btn_pager_view2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFF"
+        android:gravity="center"
+        android:onClick="onClick"
+        app:item_text="@string/viewpager_with_views" />
+
+
+    <com.zhpan.sample.common.ItemView
+        android:id="@+id/btn_view_pager2_fragment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFF"
+        android:gravity="center"
+        android:onClick="onClick"
+        app:item_text="ViewPager2 With Fragment" />
+
+
+    <com.zhpan.sample.common.ItemView
+        android:id="@+id/btn_fragment_lifecycle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFF"
+        android:gravity="center"
+        android:onClick="onClick"
+        app:item_text="Fragment MaxLifecycle" />
+</LinearLayout>

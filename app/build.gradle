@@ -6,7 +6,7 @@ android {
     compileSdkVersion 29
     buildToolsVersion "29.0.2"
     defaultConfig {
-        applicationId "com.zhpan.viewpagersample"
+        applicationId "com.zhpan.sample"
         minSdkVersion 21
         targetSdkVersion 29
         versionCode 1
@@ -31,6 +31,7 @@ dependencies {
     implementation 'androidx.viewpager2:viewpager2:1.0.0'
     implementation "androidx.core:core-ktx:1.1.0"
     implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+    implementation 'com.blankj:utilcode:1.25.8'
 }
 repositories {
     mavenCentral()
