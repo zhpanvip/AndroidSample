@@ -30,9 +30,6 @@ class VP2FragmentActivity : AppCompatActivity() {
         TabLayoutMediator(tab_layout, view_pager) { tab, position ->
             tab.text = Card.DECK[position].toString()
         }.attach()
-
-
-
     }
 
 }
