@@ -13,5 +13,6 @@ class LifecycleActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_lifecycle)
         lifecycle.addObserver(lifecycle_view)
+
     }
 }
