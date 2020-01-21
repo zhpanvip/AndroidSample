@@ -34,7 +34,7 @@ dependencies {
     implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
     implementation 'com.blankj:utilcode:1.25.8'
     implementation 'com.github.zhpanvip:viewpagerindicator:1.0.0'
-//    implementation 'androidx.lifecycle:lifecycle-*:2.1.0'
+    implementation 'androidx.lifecycle:lifecycle-extensions:2.1.0'
 }
 repositories {
     mavenCentral()
