@@ -28,4 +28,7 @@
     <color name="purple_500">#6200EE</color>
     <color name="teal_200">#03DAC5</color>
     <color name="teal_300">#4DB6AC</color>
+
+    <color name="red_checked_color">#FF4C39</color>
+    <color name="red_normal_color">#935656</color>
 </resources>

@@ -4,13 +4,17 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
 import android.widget.Toast
+import androidx.annotation.ColorRes
 import androidx.recyclerview.widget.RecyclerView
 import androidx.viewpager2.widget.CompositePageTransformer
 import androidx.viewpager2.widget.MarginPageTransformer
 import androidx.viewpager2.widget.ViewPager2
+import com.zhpan.indicator.enums.IndicatorSlideMode
+import com.zhpan.indicator.enums.IndicatorStyle
 import com.zhpan.sample.R
 import com.zhpan.sample.viewpager2.ScaleInTransformer
 import com.zhpan.sample.viewpager2.adapter.ViewPager2Adapter
+import kotlinx.android.synthetic.main.activity_pager.*
 import java.util.ArrayList
 
 class VP2ViewsActivity : AppCompatActivity() {
@@ -44,9 +48,20 @@ class VP2ViewsActivity : AppCompatActivity() {
                 Toast.makeText(this@VP2ViewsActivity, "page selected $position", Toast.LENGTH_SHORT).show()
             }
         })
+        indicatorView
+                .setSliderColor(getResColor(R.color.red_normal_color), getResColor(R.color.red_checked_color))
+                .setSliderWidth(resources.getDimension(R.dimen.dp_17))
+                .setSliderHeight(resources.getDimension(R.dimen.dp_5))
+                .setSlideMode(IndicatorSlideMode.WORM)
+                .setIndicatorStyle(IndicatorStyle.ROUND_RECT)
+                .setupWithViewPager(viewPager2)
 //        viewPager2.isUserInputEnabled = false
 //        viewPager2.orientation=ViewPager2.ORIENTATION_VERTICAL
 
+    }
+
+    protected fun getResColor(@ColorRes color: Int): Int {
+        return resources.getColor(color)
     }
 
     private val data: List<Int>
