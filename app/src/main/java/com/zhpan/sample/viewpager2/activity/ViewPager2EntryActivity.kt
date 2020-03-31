@@ -6,6 +6,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
 import com.zhpan.sample.R
+import com.zhpan.sample.lifecycle.FragmentLifecycleActivity
 
 class ViewPager2EntryActivity : AppCompatActivity() {
 

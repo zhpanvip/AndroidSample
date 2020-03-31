@@ -1,4 +1,4 @@
-package com.zhpan.sample.viewpager2.activity
+package com.zhpan.sample.lifecycle
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
