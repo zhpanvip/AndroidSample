@@ -3,4 +3,15 @@
     <declare-styleable name="ItemView">
         <attr name="item_text" format="string" />
     </declare-styleable>
+
+    <declare-styleable name="BehaviorToolbar">
+        <attr name="atb_light_title_color" format="color" />
+        <attr name="atb_dark_title_color" format="color" />
+        <attr name="atb_status_bar_color" format="color" />
+        <attr name="atb_title_bar_color" format="color" />
+        <attr name="atb_navigationIcon" format="reference" />
+        <attr name="atb_darkNavigationIcon" format="reference" />
+        <attr name="atb_line_color" format="color" />
+    </declare-styleable>
+
 </resources>

@@ -10,7 +10,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".lifecycle.LifecycleActivity"></activity>
+        <activity
+            android:name=".behavior.BehaviorActivity"
+            android:theme="@style/TranslucentStatus" />
+        <activity android:name=".lifecycle.LifecycleActivity" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

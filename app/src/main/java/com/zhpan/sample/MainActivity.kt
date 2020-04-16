@@ -7,6 +7,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
 import com.zhpan.sample.animation.AnimateEntryActivity
+import com.zhpan.sample.behavior.BehaviorActivity
 import com.zhpan.sample.lifecycle.LifecycleActivity
 import com.zhpan.sample.viewpager2.activity.*
 
@@ -25,6 +26,7 @@ class MainActivity : AppCompatActivity() {
             R.id.item_view_pager -> ViewPager2EntryActivity::class.java
             R.id.item_animation -> AnimateEntryActivity::class.java
             R.id.item_lifecycle -> LifecycleActivity::class.java
+            R.id.item_behavior -> BehaviorActivity::class.java
             else -> ViewPager2EntryActivity::class.java
         }
     }
