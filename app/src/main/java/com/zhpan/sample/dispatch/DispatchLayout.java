@@ -42,19 +42,21 @@ public class DispatchLayout extends FrameLayout {
 
     @Override
     public boolean dispatchTouchEvent(MotionEvent event) {
-        Log.e(TAG, idStr + " DispatchLayout dispatchTouchEvent"+",Action:"+getActionStr(event.getAction()));
+        Log.e(TAG, idStr + " DispatchLayout dispatchTouchEvent" + getActionStr(event.getAction()));
+        boolean dispatched = super.dispatchTouchEvent(event);
         return super.dispatchTouchEvent(event);
     }
 
     @Override
     public boolean onInterceptTouchEvent(MotionEvent event) {
-        Log.e(TAG, idStr + " DispatchLayout onInterceptTouchEvent"+",Action:"+getActionStr(event.getAction()));
-        return false;
+        Log.e(TAG, idStr + " DispatchLayout onInterceptTouchEvent" + getActionStr(event.getAction()));
+        boolean intercept = super.onInterceptTouchEvent(event);
+        return super.onInterceptTouchEvent(event);
     }
 
     @Override
     public boolean onTouchEvent(MotionEvent event) {
-        Log.e(TAG, idStr + " DispatchLayout onTouchEvent"+",Action:"+getActionStr(event.getAction()));
+        Log.e(TAG, idStr + " DispatchLayout onTouchEvent" + getActionStr(event.getAction()));
         return super.onTouchEvent(event);
     }
 
