@@ -23,6 +23,7 @@
             android:id="@+id/indicatorView"
             android:layout_centerHorizontal="true"
             android:layout_alignParentBottom="true"
+            android:visibility="gone"
             android:layout_margin="@dimen/dp_20"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"/>
@@ -34,12 +35,11 @@
     <Button
         android:id="@+id/btn_fake"
         android:onClick="fakeDragBy"
-        android:visibility="gone"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         android:layout_marginBottom="20dp"
-        android:text="fakeDragBy"
+        android:text="Refresh Data"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"/>
 

@@ -17,7 +17,7 @@ import java.util.ArrayList
 </pre> *
  */
 class ViewPager2Adapter : RecyclerView.Adapter<ViewPager2Adapter.PagerViewHolder>() {
-    private var mList: List<Int> = ArrayList()
+    private var mList: ArrayList<Int> = ArrayList()
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): PagerViewHolder {
         val itemView = LayoutInflater.from(parent.context).inflate(R.layout.item_page, parent, false)
         return PagerViewHolder(itemView)
@@ -27,7 +27,7 @@ class ViewPager2Adapter : RecyclerView.Adapter<ViewPager2Adapter.PagerViewHolder
         holder.bindData(mList[position])
     }
 
-    fun setList(list: List<Int>) {
+    fun setList(list: ArrayList<Int>) {
         mList = list
     }
 
@@ -35,9 +35,13 @@ class ViewPager2Adapter : RecyclerView.Adapter<ViewPager2Adapter.PagerViewHolder
         return mList.size
     }
 
+    fun getData(): ArrayList<Int> {
+        return mList
+    }
+
     class PagerViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
         private val mTextView: TextView = itemView.findViewById(R.id.tv_text)
-        private var colors = arrayOf("#CCFF99","#41F1E5","#8D41F1","#FF99CC")
+        private var colors = arrayOf("#CCFF99", "#41F1E5", "#8D41F1", "#FF99CC")
 
         fun bindData(i: Int) {
             mTextView.text = i.toString()
