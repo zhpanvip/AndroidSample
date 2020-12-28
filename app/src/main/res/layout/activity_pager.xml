@@ -7,7 +7,7 @@
     android:layout_height="match_parent"
     tools:context=".viewpager2.activity.VP2ViewsActivity">
 
-    <RelativeLayout
+    <com.zhpan.sample.viewpager2.ViewPager2Container
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -26,7 +26,8 @@
             android:layout_margin="@dimen/dp_20"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"/>
-    </RelativeLayout>
+
+    </com.zhpan.sample.viewpager2.ViewPager2Container>
 
 
 
