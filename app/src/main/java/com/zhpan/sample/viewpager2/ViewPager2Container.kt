@@ -10,8 +10,9 @@ import kotlin.math.abs
 /**
  * @author zhangpan
  * @date 2020/12/28
+ * 处理ViewPager2嵌套引起的滑动冲突，包括竖直滑动与水平滑动。
  */
-class  ViewPager2Container @JvmOverloads constructor(context: Context, attrs: AttributeSet? = null, defStyleAttr: Int=0) : RelativeLayout(context, attrs, defStyleAttr) {
+class ViewPager2Container @JvmOverloads constructor(context: Context, attrs: AttributeSet? = null, defStyleAttr: Int = 0) : RelativeLayout(context, attrs, defStyleAttr) {
 
     private var mViewPager2: ViewPager2? = null
     private var disallowParentInterceptDownEvent = true
@@ -28,7 +29,7 @@ class  ViewPager2Container @JvmOverloads constructor(context: Context, attrs: At
             }
         }
         if (mViewPager2 == null) {
-            throw IllegalStateException("The root child of ViewPager2Container must be contain a ViewPager2")
+            throw IllegalStateException("The root child of ViewPager2Container must contains a ViewPager2")
         }
     }
 
@@ -43,19 +44,16 @@ class  ViewPager2Container @JvmOverloads constructor(context: Context, attrs: At
             MotionEvent.ACTION_DOWN -> {
                 startX = ev.x.toInt()
                 startY = ev.y.toInt()
-                if (!disallowParentInterceptDownEvent) {
-                    parent.requestDisallowInterceptTouchEvent(false)
-                }
+                parent.requestDisallowInterceptTouchEvent(!disallowParentInterceptDownEvent)
             }
             MotionEvent.ACTION_MOVE -> {
                 val endX = ev.x.toInt()
                 val endY = ev.y.toInt()
                 val disX = abs(endX - startX)
                 val disY = abs(endY - startY)
-                val orientation = mViewPager2!!.orientation
-                if (orientation == ViewPager2.ORIENTATION_VERTICAL) {
+                if (mViewPager2!!.orientation == ViewPager2.ORIENTATION_VERTICAL) {
                     onVerticalActionMove(endY, disX, disY)
-                } else if (orientation == ViewPager2.ORIENTATION_HORIZONTAL) {
+                } else if (mViewPager2!!.orientation == ViewPager2.ORIENTATION_HORIZONTAL) {
                     onHorizontalActionMove(endX, disX, disY)
                 }
             }
