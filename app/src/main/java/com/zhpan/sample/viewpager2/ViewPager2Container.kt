@@ -100,17 +100,17 @@ class ViewPager2Container @JvmOverloads constructor(context: Context, attrs: Att
 
     /**
      * 设置是否允许在当前View的{@link MotionEvent#ACTION_DOWN}事件中禁止父View对事件的拦截，该方法
-     * 用于解决CoordinatorLayout+CollapsingToolbarLayout在嵌套NestedViewPager2Layout时引起的滑动冲突问题。
+     * 用于解决CoordinatorLayout+CollapsingToolbarLayout在嵌套ViewPager2Container时引起的滑动冲突问题。
      *
-     * 设置是否允许在NestedViewPager2Layout的{@link MotionEvent#ACTION_DOWN}事件中禁止父View对事件的拦截，该方法
-     * 用于解决CoordinatorLayout+CollapsingToolbarLayout在嵌套NestedViewPager2Layout时引起的滑动冲突问题。
+     * 设置是否允许在ViewPager2Container的{@link MotionEvent#ACTION_DOWN}事件中禁止父View对事件的拦截，该方法
+     * 用于解决CoordinatorLayout+CollapsingToolbarLayout在嵌套ViewPager2Container时引起的滑动冲突问题。
      *
-     * @param disallowParentInterceptDownEvent 是否允许NestedViewPager2Layout在{@link MotionEvent#ACTION_DOWN}事件中禁止父View拦截事件，默认值为false
-     *                          true 不允许NestedViewPager2Layout在{@link MotionEvent#ACTION_DOWN}时间中禁止父View的时间拦截，
+     * @param disallowParentInterceptDownEvent 是否允许ViewPager2Container在{@link MotionEvent#ACTION_DOWN}事件中禁止父View拦截事件，默认值为false
+     *                          true 不允许ViewPager2Container在{@link MotionEvent#ACTION_DOWN}时间中禁止父View的时间拦截，
      *                          设置disallowIntercept为true可以解决CoordinatorLayout+CollapsingToolbarLayout的滑动冲突
-     *                          false 允许NestedViewPager2Layout在{@link MotionEvent#ACTION_DOWN}时间中禁止父View的时间拦截，
+     *                          false 允许ViewPager2Container在{@link MotionEvent#ACTION_DOWN}时间中禁止父View的时间拦截，
      */
-    fun disallowInterceptDownEvent(disallowParentInterceptDownEvent: Boolean) {
+    fun disallowParentInterceptDownEvent(disallowParentInterceptDownEvent: Boolean) {
         this.disallowParentInterceptDownEvent = disallowParentInterceptDownEvent
     }
 }
