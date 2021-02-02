@@ -29,11 +29,11 @@ import com.zhpan.sample.R;
  * </pre>
  */
 public class BehaviorToolbar extends RelativeLayout {
-    private View mStatusBar;
-    private RelativeLayout mTitleBar;
-    private View mViewLine;
-    private ImageView mNavigation;
-    private TextView mTitle;
+    private final View mStatusBar;
+    private final RelativeLayout mTitleBar;
+    private final View mViewLine;
+    private final ImageView mNavigation;
+    private final TextView mTitle;
     private @ColorInt
     int titleBarColor;
     private @ColorInt
@@ -48,7 +48,7 @@ public class BehaviorToolbar extends RelativeLayout {
     private int navigationIcon;
     private int darkNavigationIcon;
     private int headerHeight;
-    private ArgbEvaluator mArgbEvaluator;
+    private final ArgbEvaluator mArgbEvaluator;
 
     public BehaviorToolbar(Context context) {
         this(context, null);

@@ -23,4 +23,22 @@
         app:atb_title_bar_color="@color/colorPrimary"
         app:layout_behavior=".behavior.ToolbarBehavior" />
 
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab_button"
+        android:layout_width="@dimen/dp_60"
+        android:layout_height="@dimen/dp_60"
+        android:layout_margin="@dimen/dp_28"
+        android:elevation="@dimen/dp_1"
+        android:src="@drawable/ic_floating_add"
+        app:backgroundTint="@color/colorPrimary"
+        app:borderWidth="0dp"
+        app:elevation="6dp"
+        app:fabCustomSize="@dimen/dp_60"
+        app:fabSize="mini"
+        app:layout_anchor="@id/recyclerView"
+        app:layout_anchorGravity="bottom|center"
+        app:layout_behavior=".behavior.VerticalFabBehavior"
+        app:pressedTranslationZ="6dp"
+        app:rippleColor="@color/transparent" />
+
 </androidx.coordinatorlayout.widget.CoordinatorLayout>

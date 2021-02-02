@@ -27,9 +27,8 @@ public class ToolbarBehavior extends CoordinatorLayout.Behavior<BehaviorToolbar>
     }
 
     @Override
-    public void onNestedScroll(@NonNull CoordinatorLayout coordinatorLayout,
-                               @NonNull BehaviorToolbar toolbar, @NonNull View target, int dxConsumed, int dyConsumed,
-                               int dxUnconsumed, int dyUnconsumed, int type) {
+    public void onNestedScroll(@NonNull CoordinatorLayout coordinatorLayout, @NonNull BehaviorToolbar toolbar, @NonNull View target, int dxConsumed, int dyConsumed, int dxUnconsumed, int dyUnconsumed, int type, @NonNull int[] consumed) {
+        super.onNestedScroll(coordinatorLayout, toolbar, target, dxConsumed, dyConsumed, dxUnconsumed, dyUnconsumed, type, consumed);
         int endOffset = toolbar.getHeaderHeight() - toolbar.getHeight();
         scrollY += dyConsumed;
         Context context = coordinatorLayout.getContext();
