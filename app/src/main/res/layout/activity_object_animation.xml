@@ -63,8 +63,15 @@
         android:layout_margin="20dp"
         android:src="@drawable/icon" />
 
+    <Button
+        android:id="@+id/btn_circle_scale"
+        android:layout_width="wrap_content"
+        android:text="Start Scale"
+        android:onClick="onClick"
+        android:layout_height="wrap_content"/>
 
-    <com.zhpan.animation.view.CircleView
+
+    <com.zhpan.sample.common.CircleView
         android:id="@+id/circle_view"
         android:layout_width="100dp"
         android:layout_height="100dp"

@@ -17,8 +17,9 @@ import com.zhpan.sample.common.CircleView;
 
 public class ObjectAnimationActivity extends AppCompatActivity {
     private CircleView mCircleView;
-    private ObjectAnimator mObjectAnimator;
     private ImageView mImageView;
+    private AnimatorSet animatorSet;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -30,7 +31,6 @@ public class ObjectAnimationActivity extends AppCompatActivity {
     }
 
     public void onClick(View view) {
-        if (mObjectAnimator != null && mObjectAnimator.isRunning()) return;
         switch (view.getId()) {
             case R.id.btn_alpha:
                 alphaAnimator();
@@ -46,6 +46,9 @@ public class ObjectAnimationActivity extends AppCompatActivity {
                 break;
             case R.id.btn_set:
                 animSet();
+                break;
+            case R.id.btn_circle_scale:
+                startScale();
                 break;
         }
 //        if (mObjectAnimator != null) {
@@ -114,7 +117,8 @@ public class ObjectAnimationActivity extends AppCompatActivity {
     private void rotateAnimator() {
         ObjectAnimator animator = ObjectAnimator.ofFloat(mImageView, "rotation", 0f, 360f);
         animator.setDuration(2000);
-        animator.start();
+        if (!animator.isRunning())
+            animator.start();
     }
 
     private void alphaAnimator() {
@@ -123,19 +127,26 @@ public class ObjectAnimationActivity extends AppCompatActivity {
         animator.start();
     }
 
-    private void heartBeat() {
-        AnimatorSet animatorSet = new AnimatorSet();
-        animatorSet.setDuration(1000);
-        animatorSet.playTogether(ObjectAnimator.ofFloat(mCircleView, "ScaleX", 1.2f), ObjectAnimator.ofFloat(mCircleView, "ScaleY", 1.2f));
-        animatorSet.addListener(new AnimatorListenerAdapter() {
-            @Override
-            public void onAnimationEnd(Animator animation) {
-                super.onAnimationEnd(animation);
-                AnimatorSet animatorSet1 = new AnimatorSet();
-                animatorSet1.playTogether(ObjectAnimator.ofFloat(mCircleView, "ScaleX", 0.8f), ObjectAnimator.ofFloat(mCircleView, "ScaleY", 0.8f));
-                animatorSet1.setDuration(1000);
-                animatorSet1.start();
-            }
-        });
+    private void startScale() {
+        if (animatorSet == null) {
+            animatorSet = new AnimatorSet();
+            animatorSet.setDuration(1000);
+            animatorSet.playTogether(ObjectAnimator.ofFloat(mCircleView, "ScaleX", 1.2f),
+                    ObjectAnimator.ofFloat(mCircleView, "ScaleY", 1.2f));
+            animatorSet.addListener(new AnimatorListenerAdapter() {
+                @Override
+                public void onAnimationEnd(Animator animation) {
+                    super.onAnimationEnd(animation);
+                    AnimatorSet animatorSet1 = new AnimatorSet();
+                    animatorSet1.playTogether(ObjectAnimator.ofFloat(mCircleView, "ScaleX", 0.8f),
+                            ObjectAnimator.ofFloat(mCircleView, "ScaleY", 0.8f));
+                    animatorSet1.setDuration(1000);
+                    animatorSet1.start();
+                }
+            });
+        }
+        if (!animatorSet.isRunning()) {
+            animatorSet.start();
+        }
     }
 }
