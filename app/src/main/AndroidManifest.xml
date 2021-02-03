@@ -10,9 +10,13 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".dispatch.DispatchActivity"></activity>
+        <activity android:name=".behavior.BehaviorEntryActivity"></activity>
         <activity
-            android:name=".behavior.BehaviorActivity"
+            android:name=".behavior.HeaderBehaviorActivity"
+            android:theme="@style/TranslucentStatus" />
+        <activity android:name=".dispatch.DispatchActivity" />
+        <activity
+            android:name=".behavior.ToolbarBehaviorActivity"
             android:theme="@style/TranslucentStatus" />
         <activity android:name=".lifecycle.LifecycleActivity" />
         <activity android:name=".MainActivity">

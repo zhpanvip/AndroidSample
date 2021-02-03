@@ -19,13 +19,10 @@ public class PropertyEntryActivity extends AppCompatActivity {
 
     public void onClick(View view) {
         Intent intent = null;
-        switch (view.getId()) {
-            case R.id.btn_value_animation:
-                intent = new Intent(this, ValueAnimatorActivity.class);
-                break;
-            case R.id.btn_object_animation:
-                intent = new Intent(this, ObjectAnimationActivity.class);
-                break;
+        if (view.getId() == R.id.btn_value_animation) {
+            intent = new Intent(this, ValueAnimatorActivity.class);
+        } else if (view.getId() == R.id.btn_value_animation) {
+            intent = new Intent(this, ObjectAnimationActivity.class);
         }
         if (intent != null) {
             startActivity(intent);

@@ -8,7 +8,7 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import com.zhpan.sample.R
 import kotlinx.android.synthetic.main.activity_behavior.*
 
-class BehaviorActivity : AppCompatActivity() {
+class ToolbarBehaviorActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_behavior)
