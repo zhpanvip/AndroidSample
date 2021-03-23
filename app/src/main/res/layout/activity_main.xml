@@ -57,5 +57,14 @@
             android:onClick="onClick"
             app:item_text="Dispatch Touch Event" />
 
+        <com.zhpan.sample.common.ItemView
+            android:id="@+id/item_paging"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FFFFFF"
+            android:gravity="center"
+            android:onClick="onClick"
+            app:item_text="Paging3" />
+
     </LinearLayout>
 </androidx.core.widget.NestedScrollView>

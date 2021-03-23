@@ -9,12 +9,12 @@ import androidx.recyclerview.widget.RecyclerView
 import androidx.viewpager2.widget.CompositePageTransformer
 import androidx.viewpager2.widget.MarginPageTransformer
 import androidx.viewpager2.widget.ViewPager2
+import com.zhpan.indicator.IndicatorView
 import com.zhpan.indicator.enums.IndicatorSlideMode
 import com.zhpan.indicator.enums.IndicatorStyle
 import com.zhpan.sample.R
 import com.zhpan.sample.viewpager2.ScaleInTransformer
 import com.zhpan.sample.viewpager2.adapter.ViewPager2Adapter
-import kotlinx.android.synthetic.main.activity_pager.*
 import java.util.ArrayList
 
 class VP2ViewsActivity : AppCompatActivity() {
@@ -23,6 +23,7 @@ class VP2ViewsActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_pager)
         viewPager2 = findViewById(R.id.view_pager2)
+        val indicatorView =findViewById<IndicatorView>(R.id.indicatorView)
         val myAdapter = ViewPager2Adapter()
         myAdapter.setList(data)
         viewPager2.adapter = myAdapter

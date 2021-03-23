@@ -5,13 +5,15 @@ import android.view.LayoutInflater
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.DividerItemDecoration
 import androidx.recyclerview.widget.LinearLayoutManager
+import com.zhpan.library.recyclerview.ui.CustomRecyclerView
 import com.zhpan.sample.R
-import kotlinx.android.synthetic.main.activity_behavior.*
 
 class ToolbarBehaviorActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_behavior)
+        val recyclerView=findViewById<CustomRecyclerView>(R.id.recyclerView)
+        val toolbar=findViewById<BehaviorToolbar>(R.id.toolbar)
         recyclerView.layoutManager = LinearLayoutManager(this)
         val headerView = LayoutInflater.from(this).inflate(R.layout.layout_behavior_header, recyclerView, false)
         recyclerView.addHeadView(headerView)
