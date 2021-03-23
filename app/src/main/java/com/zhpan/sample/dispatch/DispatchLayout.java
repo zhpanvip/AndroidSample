@@ -44,14 +44,18 @@ public class DispatchLayout extends FrameLayout {
     public boolean dispatchTouchEvent(MotionEvent event) {
         Log.e(TAG, idStr + " DispatchLayout dispatchTouchEvent" + getActionStr(event.getAction()));
         boolean dispatched = super.dispatchTouchEvent(event);
-        return super.dispatchTouchEvent(event);
+        return dispatched;
     }
 
     @Override
     public boolean onInterceptTouchEvent(MotionEvent event) {
         Log.e(TAG, idStr + " DispatchLayout onInterceptTouchEvent" + getActionStr(event.getAction()));
-        boolean intercept = super.onInterceptTouchEvent(event);
-        return super.onInterceptTouchEvent(event);
+        boolean intercept = true;
+        // 如果拦截了ACTION_DOWN事件，则包括ACTION_DOWN以及其后的一系列ACTION_DOWN事件都无法再被分发到其子View。
+        if (event.getAction() != MotionEvent.ACTION_DOWN) {
+            intercept = false;
+        }
+        return intercept;
     }
 
     @Override
