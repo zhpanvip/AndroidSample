@@ -12,7 +12,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".paging3.PagingActivity"></activity>
+        <activity android:name=".nestedscroll.NestedScrollActivity"></activity>
+        <activity android:name=".paging3.PagingActivity" />
         <activity android:name=".behavior.BehaviorEntryActivity" />
         <activity
             android:name=".behavior.HeaderBehaviorActivity"

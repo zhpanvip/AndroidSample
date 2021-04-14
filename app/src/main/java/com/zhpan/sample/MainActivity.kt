@@ -10,6 +10,7 @@ import com.zhpan.sample.animation.AnimateEntryActivity
 import com.zhpan.sample.behavior.BehaviorEntryActivity
 import com.zhpan.sample.dispatch.DispatchActivity
 import com.zhpan.sample.lifecycle.LifecycleActivity
+import com.zhpan.sample.nestedscroll.NestedScrollActivity
 import com.zhpan.sample.paging3.PagingActivity
 import com.zhpan.sample.viewpager2.activity.*
 
@@ -31,6 +32,7 @@ class MainActivity : AppCompatActivity() {
             R.id.item_behavior -> BehaviorEntryActivity::class.java
             R.id.item_dispatch -> DispatchActivity::class.java
             R.id.item_paging -> PagingActivity::class.java
+            R.id.item_nested_scroll-> NestedScrollActivity::class.java
             else -> ViewPager2EntryActivity::class.java
         }
     }
