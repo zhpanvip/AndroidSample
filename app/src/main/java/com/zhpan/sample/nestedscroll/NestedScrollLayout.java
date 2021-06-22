@@ -20,10 +20,7 @@ public class NestedScrollLayout extends NestedScrollView {
 
   private final FlingHelper mFlingHelper;
   private View topView;
-
   private ViewGroup contentView;
-
-  private RecyclerView mRecyclerView;
   private int velocityY;
   private boolean isFling;
   private int totalDy;
@@ -46,6 +43,11 @@ public class NestedScrollLayout extends NestedScrollView {
 
   public NestedScrollLayout(@NonNull Context context, @Nullable AttributeSet attrs,
       int defStyleAttr) {
+    this(context, attrs, defStyleAttr, 0);
+  }
+
+  public NestedScrollLayout(Context context, AttributeSet attrs, int defStyleAttr,
+      int defStyleRes) {
     super(context, attrs, defStyleAttr);
     mFlingHelper = new FlingHelper(getContext());
     setOnNestedScrollChangeListener((scrollView, scrollX, scrollY, oldScrollX, oldScrollY) -> {
@@ -72,6 +74,7 @@ public class NestedScrollLayout extends NestedScrollView {
   }
 
   private void childFling(int velocityY) {
+    RecyclerView mRecyclerView = tryToGetRecyclerView(contentView);
     if (mRecyclerView != null) {
       mRecyclerView.fling(0, velocityY);
     }
@@ -104,9 +107,6 @@ public class NestedScrollLayout extends NestedScrollView {
     if (parentView != null && parentView.getChildCount() == 2) {
       topView = parentView.getChildAt(0);
       contentView = (ViewGroup) parentView.getChildAt(1);
-      if (contentView != null) {
-        mRecyclerView = tryToGetRecyclerView(contentView);
-      }
     }
   }
 
@@ -124,8 +124,6 @@ public class NestedScrollLayout extends NestedScrollView {
     }
     return null;
   }
-
-
 
   @Override
   public void onNestedPreScroll(@NonNull View target, int dx, int dy, @NonNull int[] consumed) {
