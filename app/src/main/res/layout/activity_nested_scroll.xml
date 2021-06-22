@@ -5,41 +5,41 @@
     android:layout_height="match_parent"
     tools:context=".nestedscroll.NestedScrollActivity">
 
-    <com.zhpan.sample.nestedscroll.NestedScrollLayout
+  <com.zhpan.sample.nestedscroll.NestedScrollLayout
+      android:layout_width="match_parent"
+      android:layout_height="match_parent">
+
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:orientation="vertical">
 
-        <LinearLayout
+      <View
+          android:id="@+id/top_view"
+          android:layout_width="match_parent"
+          android:layout_height="@dimen/dp_300"
+          android:background="@drawable/home_top_2" />
+
+      <LinearLayout
+          android:id="@+id/ll_content"
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:orientation="vertical">
+
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/tab_layout"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="vertical">
+            android:layout_height="wrap_content" />
 
-            <View
-                android:id="@+id/top_view"
-                android:layout_width="match_parent"
-                android:layout_height="@dimen/dp_300"
-                android:background="@color/colorAccent" />
+        <androidx.viewpager2.widget.ViewPager2
+            android:id="@+id/view_pager2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
 
-            <LinearLayout
-                android:id="@+id/ll_content"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:orientation="vertical">
+      </LinearLayout>
 
-                <com.google.android.material.tabs.TabLayout
-                    android:id="@+id/tab_layout"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content" />
+    </LinearLayout>
 
-                <androidx.viewpager2.widget.ViewPager2
-                    android:id="@+id/view_pager2"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent" />
-
-            </LinearLayout>
-
-        </LinearLayout>
-
-    </com.zhpan.sample.nestedscroll.NestedScrollLayout>
+  </com.zhpan.sample.nestedscroll.NestedScrollLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
