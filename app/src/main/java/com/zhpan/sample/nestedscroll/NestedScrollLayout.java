@@ -64,6 +64,7 @@ public class NestedScrollLayout extends NestedScrollView {
 
   private void dispatchChildFling() {
     if (velocityY != 0) {
+      // 速度转化为可滑动距离
       double splineFlingDistance = mFlingHelper.getSplineFlingDistance(velocityY);
       if (splineFlingDistance > totalDy) {
         childFling(mFlingHelper.getVelocityByDistance(splineFlingDistance - totalDy));

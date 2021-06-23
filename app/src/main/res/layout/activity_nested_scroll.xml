@@ -7,6 +7,7 @@
 
   <com.zhpan.sample.nestedscroll.NestedScrollLayout
       android:layout_width="match_parent"
+      android:overScrollMode="never"
       android:layout_height="match_parent">
 
     <LinearLayout
@@ -14,11 +15,48 @@
         android:layout_height="match_parent"
         android:orientation="vertical">
 
-      <View
+      <LinearLayout
           android:id="@+id/top_view"
           android:layout_width="match_parent"
-          android:layout_height="@dimen/dp_300"
-          android:background="@drawable/home_top_2" />
+          android:orientation="vertical"
+          android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_200"
+            android:scaleType="centerCrop"
+            android:src="@drawable/advertise" />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:text="Item 0"
+            android:gravity="center"
+            android:textSize="@dimen/sp_25"
+            android:textColor="#565656"
+            android:layout_height="@dimen/dp_150" />
+
+
+        <View
+            android:layout_width="match_parent"
+            android:background="#EEEEEE"
+            android:layout_height="@dimen/dp_1" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:text="Item 1"
+            android:gravity="center"
+            android:textSize="@dimen/sp_25"
+            android:textColor="#565656"
+            android:layout_height="@dimen/dp_150" />
+
+        <View
+            android:layout_width="match_parent"
+            android:background="#EEEEEE"
+            android:layout_height="@dimen/dp_1" />
+
+      </LinearLayout>
+
 
       <LinearLayout
           android:id="@+id/ll_content"
