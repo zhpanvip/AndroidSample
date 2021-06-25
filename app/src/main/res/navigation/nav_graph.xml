@@ -53,7 +53,7 @@
 
   <activity
       android:id="@+id/NestedEntryActivity"
-      android:name="com.zhpan.sample.view.ViewEntryActivity"
+      android:name="com.zhpan.sample.nestedscroll.NestedEntryActivity"
       android:label="view_entry"
       tools:layout="@layout/activity_view_entry">
 
