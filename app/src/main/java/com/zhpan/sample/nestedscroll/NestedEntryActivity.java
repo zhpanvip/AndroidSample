@@ -1,25 +1,30 @@
 package com.zhpan.sample.nestedscroll;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
+import com.zhpan.library.BaseViewBindingActivity;
 import com.zhpan.sample.R;
-import com.zhpan.sample.material.behavior.HeaderBehaviorActivity;
+import com.zhpan.sample.databinding.ActivityNestedEnterBinding;
 import com.zhpan.sample.nestedscroll.demo1.NestedScrollActivity;
 import com.zhpan.sample.nestedscroll.demo2.NestedScrollActivity2;
 import com.zhpan.sample.nestedscroll.toolbar.ToolbarBehaviorActivity;
+import org.jetbrains.annotations.NotNull;
 
-public class NestedEntryActivity extends AppCompatActivity {
+public class NestedEntryActivity extends BaseViewBindingActivity<ActivityNestedEnterBinding>
+    implements
+    View.OnClickListener {
 
   @Override
   protected void onCreate(Bundle savedInstanceState) {
     super.onCreate(savedInstanceState);
-    setContentView(R.layout.activity_behavior_enter);
+    binding.btnToolbarBehavior.setOnClickListener(this);
+    binding.nestedScroll1.setOnClickListener(this);
+    binding.nestedScroll2.setOnClickListener(this);
   }
 
+  @Override
   public void onClick(View view) {
     Intent intent = null;
     if (view.getId() == R.id.btn_toolbar_behavior) {
@@ -32,5 +37,9 @@ public class NestedEntryActivity extends AppCompatActivity {
     if (intent != null) {
       startActivity(intent);
     }
+  }
+
+  @NotNull @Override protected ActivityNestedEnterBinding createViewBinding() {
+    return ActivityNestedEnterBinding.inflate(getLayoutInflater());
   }
 }

@@ -1,4 +1,4 @@
-package com.zhpan.sample.animation;
+package com.zhpan.sample.animation.propertyanim;
 
 import android.animation.TypeEvaluator;
 

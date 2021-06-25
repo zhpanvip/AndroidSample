@@ -6,33 +6,20 @@
     android:orientation="vertical">
 
   <com.zhpan.library.view.ItemView
-      android:id="@+id/item_lifecycle"
+      android:id="@+id/btn_toolbar_behavior"
       android:layout_width="match_parent"
       android:layout_height="wrap_content"
-      app:item_text="Lifecycle" />
+      app:item_text="Toolbar透明渐变" />
 
   <com.zhpan.library.view.ItemView
-      android:id="@+id/item_paging"
+      android:id="@+id/nested_scroll1"
       android:layout_width="match_parent"
       android:layout_height="wrap_content"
-      app:item_text="Paging3" />
+      app:item_text="嵌套滑动吸顶效果" />
 
   <com.zhpan.library.view.ItemView
-      android:id="@+id/item_view_model"
+      android:id="@+id/nested_scroll2"
       android:layout_width="match_parent"
       android:layout_height="wrap_content"
-      app:item_text="ViewModel" />
-
-  <com.zhpan.library.view.ItemView
-      android:id="@+id/item_work_manager"
-      android:layout_width="match_parent"
-      android:layout_height="wrap_content"
-      app:item_text="WorkManager" />
-
-  <com.zhpan.library.view.ItemView
-      android:id="@+id/item_hilt"
-      android:layout_width="match_parent"
-      android:layout_height="wrap_content"
-      app:item_text="Hilt" />
-
+      app:item_text="嵌套滑动抽屉效果" />
 </LinearLayout>

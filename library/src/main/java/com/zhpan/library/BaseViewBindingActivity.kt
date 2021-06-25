@@ -8,8 +8,8 @@ import androidx.viewbinding.ViewBinding
 abstract class BaseViewBindingActivity<T : ViewBinding> : AppCompatActivity() {
     protected lateinit var binding: T
 
-    override fun onCreate(bundle: Bundle?) {
-        super.onCreate(bundle)
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
         binding = createViewBinding()
         super.setContentView(binding.root)
     }

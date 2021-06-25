@@ -10,7 +10,11 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".jetpack.JetpackEntryActivity"></activity>
+        <activity android:name=".jetpack.viewmodel.ViewModelActivity"></activity>
+        <activity android:name=".jetpack.hilt.HiltActivity" />
+        <activity android:name=".jetpack.workmanager.WorkManagerActivity" />
+        <activity android:name=".view.ViewEntryActivity" />
+        <activity android:name=".jetpack.JetpackEntryActivity" />
         <activity android:name=".nestedscroll.demo2.NestedScrollActivity2" />
         <activity android:name=".nestedscroll.demo1.NestedScrollActivity" />
         <activity android:name=".jetpack.paging3.PagingActivity" />
@@ -31,11 +35,11 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".animation.InterpolatorActivity" />
-        <activity android:name=".animation.ValueAnimatorActivity" />
-        <activity android:name=".animation.PropertyEntryActivity" />
-        <activity android:name=".animation.ViewAnimationActivity" />
-        <activity android:name=".animation.ObjectAnimationActivity" />
+        <activity android:name=".animation.propertyanim.InterpolatorActivity" />
+        <activity android:name=".animation.propertyanim.ValueAnimatorActivity" />
+        <activity android:name=".animation.propertyanim.PropertyEntryActivity" />
+        <activity android:name=".animation.viewanim.ViewAnimationActivity" />
+        <activity android:name=".animation.propertyanim.ObjectAnimationActivity" />
         <activity android:name=".animation.AnimateEntryActivity" />
         <activity android:name=".view.viewpager2.activity.ViewPager2EntryActivity" />
         <activity android:name=".jetpack.lifecycle.FragmentLifecycleActivity" />

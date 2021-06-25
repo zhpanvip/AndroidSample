@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+  <LinearLayout
+      android:id="@+id/ll_main"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:orientation="vertical">
+
+    <com.zhpan.library.view.ItemView
+        android:id="@+id/item_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFF"
+        android:gravity="center"
+        app:item_text="View" />
+
+    <com.zhpan.library.view.ItemView
+        android:id="@+id/item_animation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFF"
+        android:gravity="center"
+        app:item_text="动画" />
+
+    <com.zhpan.library.view.ItemView
+        android:id="@+id/item_jetpack"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFF"
+        android:gravity="center"
+        app:item_text="Jetpack" />
+
+    <com.zhpan.library.view.ItemView
+        android:id="@+id/item_nested_scroll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFF"
+        android:gravity="center"
+        app:item_text="嵌套滑动" />
+
+    <com.zhpan.library.view.ItemView
+        android:id="@+id/item_paging"
+        android:layout_width="match_parent"
+        android:visibility="gone"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFF"
+        android:gravity="center"
+        app:item_text="Paging3" />
+
+  </LinearLayout>
+</androidx.core.widget.NestedScrollView>

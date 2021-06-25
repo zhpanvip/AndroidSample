@@ -1,4 +1,4 @@
-package com.zhpan.sample.animation;
+package com.zhpan.sample.animation.viewanim;
 
 import android.os.Bundle;
 import android.util.Log;

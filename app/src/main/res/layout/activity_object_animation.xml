@@ -5,7 +5,7 @@
     android:layout_height="match_parent"
     android:gravity="center_horizontal"
     android:orientation="vertical"
-    tools:context=".animation.ObjectAnimationActivity">
+    tools:context=".animation.propertyanim.ObjectAnimationActivity">
 
     <LinearLayout
         android:layout_width="match_parent"

@@ -1,28 +1,28 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cl_main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    tools:context=".MainActivity">
 
   <com.zhpan.library.view.ItemView
-      android:id="@+id/btn_toolbar_behavior"
+      android:id="@+id/viewpager2"
       android:layout_width="match_parent"
       android:layout_height="wrap_content"
-      android:onClick="onClick"
-      app:item_text="Toolbar透明渐变" />
+      android:background="#FFFFFF"
+      android:gravity="center"
+      app:item_text="ViewPager2" />
+
 
   <com.zhpan.library.view.ItemView
-      android:id="@+id/nested_scroll1"
+      android:id="@+id/dispatch_view"
       android:layout_width="match_parent"
       android:layout_height="wrap_content"
-      android:onClick="onClick"
-      app:item_text="嵌套滑动1" />
+      android:background="#FFFFFF"
+      android:gravity="center"
+      app:item_text="事件分发" />
 
-  <com.zhpan.library.view.ItemView
-      android:id="@+id/nested_scroll2"
-      android:layout_width="match_parent"
-      android:layout_height="wrap_content"
-      android:onClick="onClick"
-      app:item_text="嵌套滑动2" />
 </LinearLayout>

@@ -16,8 +16,8 @@ class NestedScrollActivity2 : BaseViewBindingActivity<ActivityNestedScroll2Bindi
 
     private val floatingHeight = 100.dp
 
-    override fun onCreate(bundle: Bundle?) {
-        super.onCreate(bundle)
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
 
         binding.rvLinkageTop.apply {
             layoutManager = LinearLayoutManager(this@NestedScrollActivity2)

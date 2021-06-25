@@ -1,4 +1,4 @@
-package com.zhpan.sample.animation;
+package com.zhpan.sample.animation.propertyanim;
 
 import android.animation.ValueAnimator;
 import android.os.Bundle;
@@ -10,7 +10,6 @@ import androidx.appcompat.app.AppCompatActivity;
 import com.blankj.utilcode.util.ScreenUtils;
 import com.zhpan.sample.R;
 import com.zhpan.library.view.CircleView;
-
 
 public class ValueAnimatorActivity extends AppCompatActivity {
     private CircleView mCircleView;

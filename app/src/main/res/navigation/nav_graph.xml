@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:startDestination="@+id/MainEntryFragment"
+    android:id="@+id/nav_graph">
+
+  <fragment
+      android:id="@+id/MainEntryFragment"
+      android:name="com.zhpan.sample.EntryFragment"
+      android:label="entry"
+      tools:layout="@layout/fragment_main_entry">
+    <action
+        android:id="@+id/action_MainEntryFragment_to_ViewEntryActivity"
+        app:destination="@id/ViewEntryActivity" />
+
+    <action
+        android:id="@+id/action_MainEntryFragment_to_AnimateEntryActivity"
+        app:destination="@id/AnimateEntryActivity" />
+
+    <action
+        android:id="@+id/action_MainEntryFragment_to_JetpackEntryActivity"
+        app:destination="@id/JetpackEntryActivity" />
+
+    <action
+        android:id="@+id/action_MainEntryFragment_to_NestedEntryActivity"
+        app:destination="@id/NestedEntryActivity" />
+  </fragment>
+
+  <activity
+      android:id="@+id/ViewEntryActivity"
+      android:name="com.zhpan.sample.view.ViewEntryActivity"
+      android:label="view_entry"
+      tools:layout="@layout/activity_view_entry">
+
+  </activity>
+
+  <activity
+      android:id="@+id/AnimateEntryActivity"
+      android:name="com.zhpan.sample.animation.AnimateEntryActivity"
+      android:label="view_entry"
+      tools:layout="@layout/activity_view_entry">
+
+  </activity>
+
+  <activity
+      android:id="@+id/JetpackEntryActivity"
+      android:name="com.zhpan.sample.jetpack.JetpackEntryActivity"
+      android:label="view_entry"
+      tools:layout="@layout/activity_view_entry">
+
+  </activity>
+
+  <activity
+      android:id="@+id/NestedEntryActivity"
+      android:name="com.zhpan.sample.view.ViewEntryActivity"
+      android:label="view_entry"
+      tools:layout="@layout/activity_view_entry">
+
+  </activity>
+
+</navigation>
