@@ -8,7 +8,7 @@
     android:orientation="vertical"
     tools:context=".MainActivity">
 
-    <com.zhpan.sample.common.ItemView
+    <com.zhpan.library.view.ItemView
         android:id="@+id/btn_view_pager_fragment"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -18,7 +18,7 @@
         app:item_text="ViewPager With Fragment" />
 
 
-    <com.zhpan.sample.common.ItemView
+    <com.zhpan.library.view.ItemView
         android:id="@+id/btn_pager_view2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -28,7 +28,7 @@
         app:item_text="@string/viewpager_with_views" />
 
 
-    <com.zhpan.sample.common.ItemView
+    <com.zhpan.library.view.ItemView
         android:id="@+id/btn_view_pager2_fragment"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -38,7 +38,7 @@
         app:item_text="ViewPager2 With Fragment" />
 
 
-    <com.zhpan.sample.common.ItemView
+    <com.zhpan.library.view.ItemView
         android:id="@+id/btn_fragment_lifecycle"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

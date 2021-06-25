@@ -5,9 +5,9 @@
     android:layout_width="match_parent"
     android:id="@+id/cl_main"
     android:layout_height="match_parent"
-    tools:context=".viewpager2.activity.VP2ViewsActivity">
+    tools:context=".view.viewpager2.activity.VP2ViewsActivity">
 
-    <com.zhpan.sample.viewpager2.ViewPager2Container
+    <com.zhpan.sample.view.viewpager2.ViewPager2Container
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -27,7 +27,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"/>
 
-    </com.zhpan.sample.viewpager2.ViewPager2Container>
+    </com.zhpan.sample.view.viewpager2.ViewPager2Container>
 
 
 

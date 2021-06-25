@@ -5,17 +5,24 @@
     android:layout_height="match_parent"
     android:orientation="vertical">
 
-    <com.zhpan.sample.common.ItemView
-        android:id="@+id/btn_toolbar_behavior"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:onClick="onClick"
-        app:item_text="Toolbar Behavior" />
+  <com.zhpan.library.view.ItemView
+      android:id="@+id/btn_toolbar_behavior"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:onClick="onClick"
+      app:item_text="Toolbar透明渐变" />
 
-    <com.zhpan.sample.common.ItemView
-        android:id="@+id/btn_header_behavior"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:onClick="onClick"
-        app:item_text="Header Behavior" />
+  <com.zhpan.library.view.ItemView
+      android:id="@+id/nested_scroll1"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:onClick="onClick"
+      app:item_text="嵌套滑动1" />
+
+  <com.zhpan.library.view.ItemView
+      android:id="@+id/nested_scroll2"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:onClick="onClick"
+      app:item_text="嵌套滑动2" />
 </LinearLayout>

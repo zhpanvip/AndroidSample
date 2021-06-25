@@ -35,7 +35,7 @@
     </LinearLayout>
 
 
-    <com.zhpan.sample.common.CircleView
+    <com.zhpan.library.view.CircleView
         android:id="@+id/circleView"
         android:layout_width="50dp"
         android:layout_height="50dp"

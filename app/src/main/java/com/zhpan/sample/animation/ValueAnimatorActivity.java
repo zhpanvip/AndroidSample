@@ -9,9 +9,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import com.blankj.utilcode.util.ScreenUtils;
 import com.zhpan.sample.R;
-import com.zhpan.sample.common.CircleCenter;
-import com.zhpan.sample.common.CircleCenterEvaluator;
-import com.zhpan.sample.common.CircleView;
+import com.zhpan.library.view.CircleView;
 
 
 public class ValueAnimatorActivity extends AppCompatActivity {

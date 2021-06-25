@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".viewpager2.activity.VP2FragmentActivity">
+    tools:context=".view.viewpager2.activity.VP2FragmentActivity">
 
     <com.google.android.material.tabs.TabLayout
         android:id="@+id/tab_layout"

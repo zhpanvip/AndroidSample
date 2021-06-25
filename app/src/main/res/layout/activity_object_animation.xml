@@ -71,7 +71,7 @@
         android:layout_height="wrap_content"/>
 
 
-    <com.zhpan.sample.common.CircleView
+    <com.zhpan.library.view.CircleView
         android:id="@+id/circle_view"
         android:layout_width="100dp"
         android:layout_height="100dp"

@@ -6,74 +6,59 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <LinearLayout
-        android:id="@+id/ll_main"
+  <LinearLayout
+      android:id="@+id/ll_main"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:orientation="vertical">
+
+    <com.zhpan.library.view.ItemView
+        android:id="@+id/item_view_pager"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical">
+        android:layout_height="wrap_content"
+        android:background="#FFFFFF"
+        android:gravity="center"
+        app:item_text="ViewPager2" />
 
-        <com.zhpan.sample.common.ItemView
-            android:id="@+id/item_view_pager"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="#FFFFFF"
-            android:gravity="center"
-            android:onClick="onClick"
-            app:item_text="ViewPager2" />
+    <com.zhpan.library.view.ItemView
+        android:id="@+id/item_animation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFF"
+        android:gravity="center"
+        app:item_text="Animation" />
 
-        <com.zhpan.sample.common.ItemView
-            android:id="@+id/item_animation"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="#FFFFFF"
-            android:gravity="center"
-            android:onClick="onClick"
-            app:item_text="Animation" />
+    <com.zhpan.library.view.ItemView
+        android:id="@+id/item_jectpack"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFF"
+        android:gravity="center"
+        app:item_text="Jetpack" />
 
-        <com.zhpan.sample.common.ItemView
-            android:id="@+id/item_lifecycle"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="#FFFFFF"
-            android:gravity="center"
-            android:onClick="onClick"
-            app:item_text="Lifecycle" />
+    <com.zhpan.library.view.ItemView
+        android:id="@+id/item_dispatch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFF"
+        android:gravity="center"
+        app:item_text="事件分发" />
 
-        <com.zhpan.sample.common.ItemView
-            android:id="@+id/item_behavior"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="#FFFFFF"
-            android:gravity="center"
-            android:onClick="onClick"
-            app:item_text="Behavior" />
+    <com.zhpan.library.view.ItemView
+        android:id="@+id/item_nested_scroll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFF"
+        android:gravity="center"
+        app:item_text="嵌套滑动" />
 
-        <com.zhpan.sample.common.ItemView
-            android:id="@+id/item_dispatch"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="#FFFFFF"
-            android:gravity="center"
-            android:onClick="onClick"
-            app:item_text="Dispatch Touch Event" />
+    <com.zhpan.library.view.ItemView
+        android:id="@+id/item_paging"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFF"
+        android:gravity="center"
+        app:item_text="Paging3" />
 
-        <com.zhpan.sample.common.ItemView
-            android:id="@+id/item_paging"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="#FFFFFF"
-            android:gravity="center"
-            android:onClick="onClick"
-            app:item_text="Paging3" />
-
-        <com.zhpan.sample.common.ItemView
-            android:id="@+id/item_nested_scroll"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="#FFFFFF"
-            android:gravity="center"
-            android:onClick="onClick"
-            app:item_text="Nested Scroll" />
-
-    </LinearLayout>
+  </LinearLayout>
 </androidx.core.widget.NestedScrollView>

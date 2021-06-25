@@ -3,9 +3,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".nestedscroll.NestedScrollActivity">
+    tools:context=".nestedscroll.demo1.NestedScrollActivity">
 
-  <com.zhpan.sample.nestedscroll.NestedScrollLayout
+  <com.zhpan.sample.nestedscroll.demo1.NestedScrollLayout
       android:layout_width="match_parent"
       android:overScrollMode="never"
       android:layout_height="match_parent">
@@ -78,6 +78,6 @@
 
     </LinearLayout>
 
-  </com.zhpan.sample.nestedscroll.NestedScrollLayout>
+  </com.zhpan.sample.nestedscroll.demo1.NestedScrollLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

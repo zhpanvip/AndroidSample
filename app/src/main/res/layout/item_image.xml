@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:paddingTop="@dimen/dp_15"
+    android:paddingStart="@dimen/dp_15"
+    android:paddingEnd="@dimen/dp_15"
+    android:layout_height="wrap_content">
+
+  <com.zhpan.library.view.CornerImageView
+      android:id="@+id/image_view"
+      android:layout_width="match_parent"
+      android:layout_height="150dp" />
+
+</FrameLayout>

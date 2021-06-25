@@ -1,24 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
-<com.zhpan.sample.dispatch.DispatchLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<com.zhpan.sample.view.dispatch.DispatchLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/dl_outer"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".dispatch.DispatchActivity">
+    tools:context=".view.dispatch.DispatchActivity">
 
-    <com.zhpan.sample.dispatch.DispatchLayout
+    <com.zhpan.sample.view.dispatch.DispatchLayout
         android:id="@+id/dl_inner"
         android:layout_width="@dimen/dp_300"
         android:layout_height="@dimen/dp_300"
         android:background="@color/colorPrimary">
 
-        <com.zhpan.sample.dispatch.DispatchView
+        <com.zhpan.sample.view.dispatch.DispatchView
             android:id="@+id/dispatch_view"
             android:layout_width="@dimen/dp_200"
             android:layout_height="@dimen/dp_200"
             android:background="@color/colorAccent" />
 
 
-    </com.zhpan.sample.dispatch.DispatchLayout>
+    </com.zhpan.sample.view.dispatch.DispatchLayout>
 
-</com.zhpan.sample.dispatch.DispatchLayout>
+</com.zhpan.sample.view.dispatch.DispatchLayout>

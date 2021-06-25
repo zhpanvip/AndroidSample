@@ -6,35 +6,35 @@
     android:gravity="center_horizontal"
     android:orientation="vertical">
 
-    <com.zhpan.sample.common.ItemView
+    <com.zhpan.library.view.ItemView
         android:id="@+id/btn_view_animation"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:onClick="onClick"
         app:item_text="视图动画" />
 
-    <com.zhpan.sample.common.ItemView
+    <com.zhpan.library.view.ItemView
         android:id="@+id/btn_property_animation"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:onClick="onClick"
         app:item_text="属性动画" />
 
-    <com.zhpan.sample.common.ItemView
+    <com.zhpan.library.view.ItemView
         android:id="@+id/btn_interpolator"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:onClick="onClick"
         app:item_text="插值器" />
 
-    <com.zhpan.sample.common.ItemView
+    <com.zhpan.library.view.ItemView
         android:id="@+id/btn_transition"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:onClick="onClick"
         app:item_text="转场动画" />
 
-    <com.zhpan.sample.common.ItemView
+    <com.zhpan.library.view.ItemView
         android:id="@+id/btn_others"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

@@ -2,8 +2,6 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.zhpan.sample">
 
-    <uses-permission android:name="android.permission.INTERNET" />
-
     <application
         android:name=".App"
         android:allowBackup="true"
@@ -12,17 +10,19 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".nestedscroll.NestedScrollActivity"></activity>
-        <activity android:name=".paging3.PagingActivity" />
-        <activity android:name=".behavior.BehaviorEntryActivity" />
+        <activity android:name=".jetpack.JetpackEntryActivity"></activity>
+        <activity android:name=".nestedscroll.demo2.NestedScrollActivity2" />
+        <activity android:name=".nestedscroll.demo1.NestedScrollActivity" />
+        <activity android:name=".jetpack.paging3.PagingActivity" />
+        <activity android:name=".nestedscroll.NestedEntryActivity" />
         <activity
-            android:name=".behavior.HeaderBehaviorActivity"
+            android:name=".material.behavior.HeaderBehaviorActivity"
             android:theme="@style/TranslucentStatus" />
-        <activity android:name=".dispatch.DispatchActivity" />
+        <activity android:name=".view.dispatch.DispatchActivity" />
         <activity
-            android:name=".behavior.ToolbarBehaviorActivity"
+            android:name=".nestedscroll.toolbar.ToolbarBehaviorActivity"
             android:theme="@style/TranslucentStatus" />
-        <activity android:name=".lifecycle.LifecycleActivity" />
+        <activity android:name=".jetpack.lifecycle.LifecycleActivity" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -37,11 +37,13 @@
         <activity android:name=".animation.ViewAnimationActivity" />
         <activity android:name=".animation.ObjectAnimationActivity" />
         <activity android:name=".animation.AnimateEntryActivity" />
-        <activity android:name=".viewpager2.activity.ViewPager2EntryActivity" />
-        <activity android:name=".lifecycle.FragmentLifecycleActivity" />
-        <activity android:name=".viewpager2.activity.VPFragmentActivity" />
-        <activity android:name=".viewpager2.activity.VP2ViewsActivity" />
-        <activity android:name=".viewpager2.activity.VP2FragmentActivity" />
+        <activity android:name=".view.viewpager2.activity.ViewPager2EntryActivity" />
+        <activity android:name=".jetpack.lifecycle.FragmentLifecycleActivity" />
+        <activity android:name=".view.viewpager2.activity.VPFragmentActivity" />
+        <activity android:name=".view.viewpager2.activity.VP2ViewsActivity" />
+        <activity android:name=".view.viewpager2.activity.VP2FragmentActivity" />
     </application>
+
+    <uses-permission android:name="android.permission.INTERNET" />
 
 </manifest>

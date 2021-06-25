@@ -5,14 +5,14 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical">
 
-    <com.zhpan.sample.common.ItemView
+    <com.zhpan.library.view.ItemView
         android:id="@+id/btn_value_animation"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:onClick="onClick"
         app:item_text="ValueAnimator" />
 
-    <com.zhpan.sample.common.ItemView
+    <com.zhpan.library.view.ItemView
         android:id="@+id/btn_object_animation"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

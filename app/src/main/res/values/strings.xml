@@ -1,7 +1,7 @@
 <resources>
-    <string name="app_name">AndroidSample</string>
-    <string name="viewpager_with_views">ViewPager2 with Views</string>
-    <string name="view_pager">ViewPager</string>
-    <string name="behavior">Behavior</string>
-    <string name="search">Search</string>
+  <string name="app_name">AndroidSample</string>
+  <string name="viewpager_with_views">ViewPager2 with Views</string>
+  <string name="view_pager">ViewPager</string>
+  <string name="behavior">Behavior</string>
+  <string name="search">Search</string>
 </resources>

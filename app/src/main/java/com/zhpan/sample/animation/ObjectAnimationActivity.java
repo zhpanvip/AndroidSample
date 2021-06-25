@@ -12,7 +12,7 @@ import android.widget.ImageView;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.zhpan.sample.R;
-import com.zhpan.sample.common.CircleView;
+import com.zhpan.library.view.CircleView;
 
 
 public class ObjectAnimationActivity extends AppCompatActivity {

@@ -13,7 +13,7 @@
         android:orientation="horizontal"
         android:weightSum="5">
 
-        <com.zhpan.sample.common.ItemView
+        <com.zhpan.library.view.ItemView
             android:id="@+id/btn_accelerate"
             android:layout_width="0dp"
             android:layout_height="match_parent"
@@ -21,7 +21,7 @@
             android:onClick="onClick"
             app:item_text="accelerate" />
 
-        <com.zhpan.sample.common.ItemView
+        <com.zhpan.library.view.ItemView
             android:id="@+id/btn_decelerate"
             android:layout_width="0dp"
             android:layout_height="match_parent"
@@ -29,7 +29,7 @@
             android:onClick="onClick"
             app:item_text="decelerate" />
 
-        <com.zhpan.sample.common.ItemView
+        <com.zhpan.library.view.ItemView
             android:id="@+id/btn_bounce"
             android:layout_width="0dp"
             android:layout_height="match_parent"
@@ -37,7 +37,7 @@
             android:onClick="onClick"
             app:item_text="bounce" />
 
-        <com.zhpan.sample.common.ItemView
+        <com.zhpan.library.view.ItemView
             android:id="@+id/btn_anticipate"
             android:layout_width="0dp"
             android:layout_height="match_parent"
@@ -45,7 +45,7 @@
             android:onClick="onClick"
             app:item_text="anticipate" />
 
-        <com.zhpan.sample.common.ItemView
+        <com.zhpan.library.view.ItemView
             android:id="@+id/btn_overshoot"
             android:layout_width="0dp"
             android:layout_height="match_parent"
@@ -66,7 +66,7 @@
             android:layout_gravity="center"
             android:background="@color/colorPrimary" />
 
-        <com.zhpan.sample.common.CircleView
+        <com.zhpan.library.view.CircleView
             android:id="@+id/circle_view"
             android:layout_width="100dp"
             android:layout_height="100dp"

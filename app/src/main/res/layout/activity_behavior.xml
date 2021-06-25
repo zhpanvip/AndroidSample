@@ -4,14 +4,14 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".behavior.ToolbarBehaviorActivity">
+    tools:context=".nestedscroll.toolbar.ToolbarBehaviorActivity">
 
     <com.zhpan.library.recyclerview.ui.CustomRecyclerView
         android:id="@+id/recyclerView"
         android:layout_width="match_parent"
         android:layout_height="match_parent" />
 
-    <com.zhpan.sample.behavior.BehaviorToolbar
+    <com.zhpan.sample.nestedscroll.toolbar.BehaviorToolbar
         android:id="@+id/toolbar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -21,7 +21,7 @@
         app:atb_navigationIcon="@drawable/ic_action_back_white"
         app:atb_status_bar_color="@color/colorPrimaryDark"
         app:atb_title_bar_color="@color/colorPrimary"
-        app:layout_behavior=".behavior.ToolbarBehavior" />
+        app:layout_behavior=".nestedscroll.toolbar.ToolbarBehavior" />
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/fab_button"
@@ -37,7 +37,7 @@
         app:fabSize="mini"
         app:layout_anchor="@id/recyclerView"
         app:layout_anchorGravity="bottom|center"
-        app:layout_behavior=".behavior.VerticalFabBehavior"
+        app:layout_behavior=".material.behavior.VerticalFabBehavior"
         app:pressedTranslationZ="6dp"
         app:rippleColor="@color/transparent" />
 
