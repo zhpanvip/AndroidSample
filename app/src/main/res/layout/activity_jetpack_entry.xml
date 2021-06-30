@@ -15,13 +15,7 @@
       android:id="@+id/item_paging"
       android:layout_width="match_parent"
       android:layout_height="wrap_content"
-      app:item_text="Paging3" />
-
-  <com.zhpan.library.view.ItemView
-      android:id="@+id/item_view_model"
-      android:layout_width="match_parent"
-      android:layout_height="wrap_content"
-      app:item_text="ViewModel" />
+      app:item_text="Paging3+ViewModel" />
 
   <com.zhpan.library.view.ItemView
       android:id="@+id/item_work_manager"
