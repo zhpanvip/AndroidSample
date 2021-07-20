@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".binder.BinderEntryActivity">
+
+    <com.zhpan.library.view.ItemView
+        android:id="@+id/item_binder"
+        app:item_text="Binder使用"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <com.zhpan.library.view.ItemView
+        android:id="@+id/item_binder_proxy"
+        android:layout_width="match_parent"
+        app:item_text="代理模式优化Binder"
+        android:layout_height="wrap_content" />
+
+    <com.zhpan.library.view.ItemView
+        android:id="@+id/item_aidl"
+        app:item_text="Binder与AIDL"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+</androidx.appcompat.widget.LinearLayoutCompat>

@@ -65,7 +65,7 @@
 
   <activity
       android:id="@+id/BinderActivity"
-      android:name="com.zhpan.sample.binder.BinderActivity"
+      android:name="com.zhpan.sample.binder.BinderEntryActivity"
       android:label="view_entry"
       tools:layout="@layout/activity_view_entry">
 

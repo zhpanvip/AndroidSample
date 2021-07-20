@@ -1,9 +1,9 @@
 <resources>
-  <string name="app_name">AndroidSample</string>
-  <string name="viewpager_with_views">ViewPager2 with Views</string>
-  <string name="view_pager">ViewPager</string>
-  <string name="behavior">Behavior</string>
-  <string name="search">Search</string>
-  <!-- TODO: Remove or change this placeholder text -->
-  <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="app_name">AndroidSample</string>
+    <string name="viewpager_with_views">ViewPager2 with Views</string>
+    <string name="view_pager">ViewPager</string>
+    <string name="behavior">Behavior</string>
+    <string name="search">Search</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

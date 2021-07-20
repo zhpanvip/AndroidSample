@@ -1,4 +1,4 @@
-package com.zhpan.sample.binder;
+package com.zhpan.sample.binder.client;
 
 import android.content.ComponentName;
 import android.content.Intent;
@@ -9,14 +9,14 @@ import android.os.Parcel;
 import android.os.RemoteException;
 import android.widget.Toast;
 
-import androidx.appcompat.app.AppCompatActivity;
+import com.zhpan.library.BaseViewBindingActivity;
+import com.zhpan.sample.databinding.ActivityBinderBinding;
 
-import com.zhpan.sample.R;
+import org.jetbrains.annotations.NotNull;
 
-import static android.content.Context.BIND_AUTO_CREATE;
 import static com.zhpan.sample.binder.server.GradeService.REQUEST_CODE;
 
-public class BinderActivity extends AppCompatActivity {
+public class BinderActivity extends BaseViewBindingActivity<ActivityBinderBinding> {
 
     private IBinder mRemoteBinder;
 
@@ -37,14 +37,13 @@ public class BinderActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_binder);
-        findViewById(R.id.btn_bind_service).setOnClickListener(view -> {
+        binding.btnBindService.setOnClickListener(view -> {
             String action = "android.intent.action.server.gradeservice";
             Intent intent = new Intent(action);
             intent.setPackage(getPackageName());
             bindService(intent, mServiceConnection, BIND_AUTO_CREATE);
         });
-        findViewById(R.id.btn_find_grade).setOnClickListener(view -> {
+        binding.btnFindGrade.setOnClickListener(view -> {
             int grade = getStudentGrade("Anna");
             Toast.makeText(BinderActivity.this, "Anna grade is " + grade, Toast.LENGTH_SHORT).show();
         });
@@ -66,5 +65,11 @@ public class BinderActivity extends AppCompatActivity {
             e.printStackTrace();
         }
         return grade;
+    }
+
+    @NotNull
+    @Override
+    protected ActivityBinderBinding createViewBinding() {
+        return ActivityBinderBinding.inflate(getLayoutInflater());
     }
 }

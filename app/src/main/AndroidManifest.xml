@@ -2,6 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.zhpan.sample">
 
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <application
         android:name=".App"
         android:allowBackup="true"
@@ -10,6 +12,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <activity android:name=".binder.aidl.AIDLActivity"></activity>
+        <activity android:name=".binder.BinderEntryActivity" />
+        <activity android:name=".binder.client2.BinderProxyActivity" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -18,7 +23,6 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".jetpack.viewmodel.ViewModelActivity"></activity>
         <activity android:name=".jetpack.hilt.HiltActivity" />
         <activity android:name=".jetpack.workmanager.WorkManagerActivity" />
         <activity android:name=".view.ViewEntryActivity" />
@@ -46,17 +50,15 @@
         <activity android:name=".view.viewpager2.activity.VPFragmentActivity" />
         <activity android:name=".view.viewpager2.activity.VP2ViewsActivity" />
         <activity android:name=".view.viewpager2.activity.VP2FragmentActivity" />
-        <activity android:name="com.zhpan.sample.binder.BinderActivity" />
+        <activity android:name=".binder.client.BinderActivity" />
 
         <service
-            android:name="com.zhpan.sample.binder.server.GradeService"
-            android:process=":client">
+            android:name=".binder.server.GradeService"
+            android:process=":server">
             <intent-filter>
                 <action android:name="android.intent.action.server.gradeservice" />
             </intent-filter>
         </service>
     </application>
-
-    <uses-permission android:name="android.permission.INTERNET" />
 
 </manifest>
