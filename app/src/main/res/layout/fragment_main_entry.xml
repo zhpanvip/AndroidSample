@@ -53,5 +53,13 @@
         android:gravity="center"
         app:item_text="Paging3" />
 
+    <com.zhpan.library.view.ItemView
+        android:id="@+id/item_binder"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFF"
+        android:gravity="center"
+        app:item_text="Binder" />
+
   </LinearLayout>
 </androidx.core.widget.NestedScrollView>

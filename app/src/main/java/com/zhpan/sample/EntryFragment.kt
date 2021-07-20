@@ -24,6 +24,10 @@ class EntryFragment : BaseViewBindingFragment<FragmentMainEntryBinding>() {
         binding.itemView.setOnClickListener {
             navController.navigate(R.id.action_MainEntryFragment_to_ViewEntryActivity)
         }
+
+        binding.itemBinder.setOnClickListener {
+            navController.navigate(R.id.action_MainEntryFragment_to_BinderActivity)
+        }
     }
 
     override fun createViewBinding(container: ViewGroup?): FragmentMainEntryBinding {

@@ -10,6 +10,14 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
         <activity android:name=".jetpack.viewmodel.ViewModelActivity"></activity>
         <activity android:name=".jetpack.hilt.HiltActivity" />
         <activity android:name=".jetpack.workmanager.WorkManagerActivity" />
@@ -27,14 +35,6 @@
             android:name=".nestedscroll.toolbar.ToolbarBehaviorActivity"
             android:theme="@style/TranslucentStatus" />
         <activity android:name=".jetpack.lifecycle.LifecycleActivity" />
-        <activity android:name=".MainActivity">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-                <action android:name="android.intent.action.VIEW" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
         <activity android:name=".animation.propertyanim.InterpolatorActivity" />
         <activity android:name=".animation.propertyanim.ValueAnimatorActivity" />
         <activity android:name=".animation.propertyanim.PropertyEntryActivity" />
@@ -46,6 +46,15 @@
         <activity android:name=".view.viewpager2.activity.VPFragmentActivity" />
         <activity android:name=".view.viewpager2.activity.VP2ViewsActivity" />
         <activity android:name=".view.viewpager2.activity.VP2FragmentActivity" />
+        <activity android:name="com.zhpan.sample.binder.BinderActivity" />
+
+        <service
+            android:name="com.zhpan.sample.binder.server.GradeService"
+            android:process=":client">
+            <intent-filter>
+                <action android:name="android.intent.action.server.gradeservice" />
+            </intent-filter>
+        </service>
     </application>
 
     <uses-permission android:name="android.permission.INTERNET" />

@@ -25,6 +25,10 @@
     <action
         android:id="@+id/action_MainEntryFragment_to_NestedEntryActivity"
         app:destination="@id/NestedEntryActivity" />
+
+    <action
+        android:id="@+id/action_MainEntryFragment_to_BinderActivity"
+        app:destination="@id/BinderActivity" />
   </fragment>
 
   <activity
@@ -54,6 +58,14 @@
   <activity
       android:id="@+id/NestedEntryActivity"
       android:name="com.zhpan.sample.nestedscroll.NestedEntryActivity"
+      android:label="view_entry"
+      tools:layout="@layout/activity_view_entry">
+
+  </activity>
+
+  <activity
+      android:id="@+id/BinderActivity"
+      android:name="com.zhpan.sample.binder.BinderActivity"
       android:label="view_entry"
       tools:layout="@layout/activity_view_entry">
 
