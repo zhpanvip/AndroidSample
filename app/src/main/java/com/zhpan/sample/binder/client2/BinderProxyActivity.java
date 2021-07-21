@@ -5,7 +5,6 @@ import android.content.Intent;
 import android.content.ServiceConnection;
 import android.os.Bundle;
 import android.os.IBinder;
-import android.widget.Toast;
 
 import com.blankj.utilcode.util.ToastUtils;
 import com.zhpan.library.BaseViewBindingActivity;
@@ -36,16 +35,17 @@ public class BinderProxyActivity extends BaseViewBindingActivity<ActivityBinderB
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        binding.btnBindService.setOnClickListener(view -> {
-            String action = "android.intent.action.server.gradeservice";
-            Intent intent = new Intent(action);
-            intent.setPackage(getPackageName());
-            bindService(intent, mServiceConnection, BIND_AUTO_CREATE);
-        });
-        binding.btnFindGrade.setOnClickListener(view -> {
-            int grade = mBinderProxy.getStudentGrade("Anna");
-            Toast.makeText(BinderProxyActivity.this, "Anna grade is " + grade, Toast.LENGTH_SHORT).show();
-        });
+        binding.btnBindService.setOnClickListener(view -> bindGradeService());
+        binding.btnFindGrade.setOnClickListener(view -> ToastUtils.showShort("Anna grade is "
+                + mBinderProxy.getStudentGrade("Anna")));
+    }
+
+
+    private void bindGradeService() {
+        String action = "android.intent.action.server.gradeservice";
+        Intent intent = new Intent(action);
+        intent.setPackage(getPackageName());
+        bindService(intent, mServiceConnection, BIND_AUTO_CREATE);
     }
 
     @NotNull

@@ -4,7 +4,7 @@ import android.content.Intent;
 import android.os.Bundle;
 
 import com.zhpan.library.BaseViewBindingActivity;
-import com.zhpan.sample.binder.aidl.AIDLActivity;
+import com.zhpan.sample.binder.aidl.AidlActivity;
 import com.zhpan.sample.binder.client.BinderActivity;
 import com.zhpan.sample.binder.client2.BinderProxyActivity;
 import com.zhpan.sample.databinding.ActivityBinderEntryBinding;
@@ -21,7 +21,7 @@ public class BinderEntryActivity extends BaseViewBindingActivity<ActivityBinderE
         binding.itemBinderProxy.setOnClickListener(v ->
                 startActivity(new Intent(BinderEntryActivity.this, BinderProxyActivity.class)));
         binding.itemAidl.setOnClickListener(v ->
-                startActivity(new Intent(BinderEntryActivity.this, AIDLActivity.class)));
+                startActivity(new Intent(BinderEntryActivity.this, AidlActivity.class)));
     }
 
     @NotNull

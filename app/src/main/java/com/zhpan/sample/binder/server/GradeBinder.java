@@ -34,6 +34,4 @@ public class GradeBinder extends Binder implements IGradeInterface {
         }
         return super.onTransact(code, data, reply, flags);
     }
-
-
 }
