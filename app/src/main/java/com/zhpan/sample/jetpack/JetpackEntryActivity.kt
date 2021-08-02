@@ -3,6 +3,7 @@ package com.zhpan.sample.jetpack
 import android.content.Intent
 import android.os.Bundle
 import com.zhpan.library.BaseViewBindingActivity
+import com.zhpan.sample.banner3d.Banner3dActivity
 import com.zhpan.sample.databinding.ActivityJetpackEntryBinding
 import com.zhpan.sample.jetpack.lifecycle.LifecycleActivity
 import com.zhpan.sample.jetpack.paging3.PagingActivity
@@ -18,7 +19,7 @@ class JetpackEntryActivity : BaseViewBindingActivity<ActivityJetpackEntryBinding
             startActivity(Intent(this, PagingActivity::class.java))
         }
         binding.itemWorkManager.setOnClickListener {
-            startActivity(Intent(this, WorkManagerActivity::class.java))
+            startActivity(Intent(this, Banner3dActivity::class.java))
         }
     }
 

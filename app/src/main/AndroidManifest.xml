@@ -12,7 +12,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".binder.aidl.AidlActivity"></activity>
+        <activity android:name=".banner3d.Banner3dActivity"></activity>
+        <activity android:name=".binder.aidl.AidlActivity" />
         <activity android:name=".binder.BinderEntryActivity" />
         <activity android:name=".binder.client2.BinderProxyActivity" />
         <activity android:name=".MainActivity">
@@ -59,7 +60,6 @@
                 <action android:name="android.intent.action.server.gradeservice" />
             </intent-filter>
         </service>
-
         <service
             android:name=".binder.server.AidlGradeService"
             android:process=":server">
