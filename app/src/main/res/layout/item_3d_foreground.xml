@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <com.zhpan.sample.banner3d.SensorLayout
+        android:id="@+id/sensor_layout_bg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/iv_background"
+            android:layout_width="match_parent"
+            android:scaleX="1.3"
+            android:background="@drawable/background"
+            android:layout_height="match_parent" />
+
+    </com.zhpan.sample.banner3d.SensorLayout>
+
+    <ImageView
+        android:id="@+id/iv_mid"
+        android:layout_width="match_parent"
+        android:src="@drawable/mid"
+        android:layout_height="match_parent" />
+
+    <com.zhpan.sample.banner3d.SensorLayout
+        android:id="@+id/sensor_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/iv_foreground"
+            android:layout_width="match_parent"
+            android:background="@drawable/foreground"
+            android:layout_height="match_parent" />
+
+    </com.zhpan.sample.banner3d.SensorLayout>
+
+</FrameLayout>

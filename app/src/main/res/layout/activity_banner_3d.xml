@@ -7,47 +7,42 @@
     tools:context=".MainActivity">
 
         <com.zhpan.bannerview.BannerViewPager
-            android:id="@+id/bvp_background"
-            android:layout_width="match_parent"
-            android:layout_height="180dp" />
-
-        <com.zhpan.bannerview.BannerViewPager
             android:id="@+id/bvp_foreground"
             android:layout_width="match_parent"
             android:layout_height="180dp" />
 
-    <com.zhpan.sample.banner3d.SensorLayout
-        android:id="@+id/sensor_layout_bg"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
+<!--    <com.zhpan.sample.banner3d.SensorLayout-->
+<!--        android:id="@+id/sensor_layout_bg"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent">-->
 
-        <View
-            android:id="@+id/view"
-            android:scaleX="1.3"
-            android:layout_width="match_parent"
-            android:background="@drawable/background"
-            android:layout_height="@dimen/dp_180" />
+<!--        <View-->
+<!--            android:id="@+id/view"-->
+<!--            android:scaleX="1.3"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:background="@drawable/background"-->
+<!--            android:layout_height="@dimen/dp_180" />-->
 
-    </com.zhpan.sample.banner3d.SensorLayout>
-
-
-    <View
-        android:layout_width="match_parent"
-        android:background="@drawable/mid"
-        android:layout_height="@dimen/dp_180" />
+<!--    </com.zhpan.sample.banner3d.SensorLayout>-->
 
 
-    <com.zhpan.sample.banner3d.SensorLayout
-        android:id="@+id/sensor_layout_pg"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
+<!--    <View-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:background="@drawable/mid"-->
+<!--        android:layout_height="@dimen/dp_180" />-->
 
-        <View
-            android:layout_width="match_parent"
-            android:background="@drawable/foreground"
-            android:layout_height="@dimen/dp_180" />
 
-    </com.zhpan.sample.banner3d.SensorLayout>
+<!--    <com.zhpan.sample.banner3d.SensorLayout-->
+<!--        android:id="@+id/sensor_layout_pg"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent">-->
+
+<!--        <View-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:background="@drawable/foreground"-->
+<!--            android:layout_height="@dimen/dp_180" />-->
+
+<!--    </com.zhpan.sample.banner3d.SensorLayout>-->
 
 
 </FrameLayout>

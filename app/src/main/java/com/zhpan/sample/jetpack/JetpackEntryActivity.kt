@@ -19,7 +19,7 @@ class JetpackEntryActivity : BaseViewBindingActivity<ActivityJetpackEntryBinding
             startActivity(Intent(this, PagingActivity::class.java))
         }
         binding.itemWorkManager.setOnClickListener {
-            startActivity(Intent(this, Banner3dActivity::class.java))
+            startActivity(Intent(this, WorkManagerActivity::class.java))
         }
     }
 

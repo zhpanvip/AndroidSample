@@ -74,7 +74,7 @@ public class SensorLayout extends FrameLayout implements SensorEventListener {
         }
         float[] values = new float[3];
         float[] R = new float[9];
-        if (mMagneticValues != null)
+        if (mMagneticValues != null && mAccelerateValues != null)
             SensorManager.getRotationMatrix(R, null, mAccelerateValues, mMagneticValues);
         SensorManager.getOrientation(R, values);
         // x轴的偏转角度

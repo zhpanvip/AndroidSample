@@ -5,70 +5,78 @@
     app:startDestination="@+id/MainEntryFragment"
     android:id="@+id/nav_graph">
 
-  <fragment
-      android:id="@+id/MainEntryFragment"
-      android:name="com.zhpan.sample.EntryFragment"
-      android:label="entry"
-      tools:layout="@layout/fragment_main_entry">
-    <action
-        android:id="@+id/action_MainEntryFragment_to_ViewEntryActivity"
-        app:destination="@id/ViewEntryActivity" />
+    <fragment
+        android:id="@+id/MainEntryFragment"
+        android:name="com.zhpan.sample.EntryFragment"
+        android:label="entry"
+        tools:layout="@layout/fragment_main_entry">
+        <action
+            android:id="@+id/action_MainEntryFragment_to_ViewEntryActivity"
+            app:destination="@id/ViewEntryActivity" />
 
-    <action
-        android:id="@+id/action_MainEntryFragment_to_AnimateEntryActivity"
-        app:destination="@id/AnimateEntryActivity" />
+        <action
+            android:id="@+id/action_MainEntryFragment_to_AnimateEntryActivity"
+            app:destination="@id/AnimateEntryActivity" />
 
-    <action
-        android:id="@+id/action_MainEntryFragment_to_JetpackEntryActivity"
-        app:destination="@id/JetpackEntryActivity" />
+        <action
+            android:id="@+id/action_MainEntryFragment_to_JetpackEntryActivity"
+            app:destination="@id/JetpackEntryActivity" />
 
-    <action
-        android:id="@+id/action_MainEntryFragment_to_NestedEntryActivity"
-        app:destination="@id/NestedEntryActivity" />
+        <action
+            android:id="@+id/action_MainEntryFragment_to_NestedEntryActivity"
+            app:destination="@id/NestedEntryActivity" />
 
-    <action
-        android:id="@+id/action_MainEntryFragment_to_BinderActivity"
-        app:destination="@id/BinderActivity" />
-  </fragment>
+        <action
+            android:id="@+id/action_MainEntryFragment_to_BinderActivity"
+            app:destination="@id/BinderActivity" />
 
-  <activity
-      android:id="@+id/ViewEntryActivity"
-      android:name="com.zhpan.sample.view.ViewEntryActivity"
-      android:label="view_entry"
-      tools:layout="@layout/activity_view_entry">
+        <action
+            android:id="@+id/action_MainEntryFragment_to_Banner3DActivity"
+            app:destination="@id/Banner3DActivity" />
+    </fragment>
 
-  </activity>
+    <activity
+        android:id="@+id/ViewEntryActivity"
+        android:name="com.zhpan.sample.view.ViewEntryActivity"
+        android:label="view_entry"
+        tools:layout="@layout/activity_view_entry">
 
-  <activity
-      android:id="@+id/AnimateEntryActivity"
-      android:name="com.zhpan.sample.animation.AnimateEntryActivity"
-      android:label="view_entry"
-      tools:layout="@layout/activity_view_entry">
+    </activity>
 
-  </activity>
+    <activity
+        android:id="@+id/AnimateEntryActivity"
+        android:name="com.zhpan.sample.animation.AnimateEntryActivity"
+        android:label="view_entry"
+        tools:layout="@layout/activity_view_entry">
 
-  <activity
-      android:id="@+id/JetpackEntryActivity"
-      android:name="com.zhpan.sample.jetpack.JetpackEntryActivity"
-      android:label="view_entry"
-      tools:layout="@layout/activity_view_entry">
+    </activity>
 
-  </activity>
+    <activity
+        android:id="@+id/JetpackEntryActivity"
+        android:name="com.zhpan.sample.jetpack.JetpackEntryActivity"
+        android:label="view_entry"
+        tools:layout="@layout/activity_view_entry" />
 
-  <activity
-      android:id="@+id/NestedEntryActivity"
-      android:name="com.zhpan.sample.nestedscroll.NestedEntryActivity"
-      android:label="view_entry"
-      tools:layout="@layout/activity_view_entry">
+    <activity
+        android:id="@+id/Banner3DActivity"
+        android:name="com.zhpan.sample.banner3d.Banner3dActivity"
+        android:label="view_entry"
+        tools:layout="@layout/activity_view_entry" />
 
-  </activity>
+    <activity
+        android:id="@+id/NestedEntryActivity"
+        android:name="com.zhpan.sample.nestedscroll.NestedEntryActivity"
+        android:label="view_entry"
+        tools:layout="@layout/activity_view_entry">
 
-  <activity
-      android:id="@+id/BinderActivity"
-      android:name="com.zhpan.sample.binder.BinderEntryActivity"
-      android:label="view_entry"
-      tools:layout="@layout/activity_view_entry">
+    </activity>
 
-  </activity>
+    <activity
+        android:id="@+id/BinderActivity"
+        android:name="com.zhpan.sample.binder.BinderEntryActivity"
+        android:label="view_entry"
+        tools:layout="@layout/activity_view_entry">
+
+    </activity>
 
 </navigation>

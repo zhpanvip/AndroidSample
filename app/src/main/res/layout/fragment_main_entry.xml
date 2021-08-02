@@ -54,6 +54,14 @@
         app:item_text="Paging3" />
 
     <com.zhpan.library.view.ItemView
+        android:id="@+id/item_banner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFF"
+        android:gravity="center"
+        app:item_text="自如客裸眼 3D Banner效果" />
+
+    <com.zhpan.library.view.ItemView
         android:id="@+id/item_binder"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
