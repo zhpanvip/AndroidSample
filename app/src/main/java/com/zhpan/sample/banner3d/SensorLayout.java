@@ -38,7 +38,7 @@ public class SensorLayout extends FrameLayout implements SensorEventListener {
     private boolean hasChangeY;
     private int scrollY;
     private static final double mXMoveDistance = 40;
-    private static final double mYMoveDistance = 0;
+    private static final double mYMoveDistance = 20;
     private int mDirection = 1;
 
     public SensorLayout(@NonNull Context context) {
