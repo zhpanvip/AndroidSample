@@ -1,21 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
-
-<FrameLayout android:layout_width="match_parent"
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:android="http://schemas.android.com/apk/res/android">
+    tools:context=".MainActivity">
 
     <ImageView
         android:id="@+id/iv_mid"
         android:layout_width="match_parent"
         android:scaleType="fitXY"
         android:layout_marginEnd="@dimen/dp_16"
+        android:src="@drawable/mid3"
         android:layout_marginStart="@dimen/dp_16"
-        android:layout_marginBottom="@dimen/dp_16"
-        android:layout_gravity="bottom"
-        android:layout_height="@dimen/dp_100" />
+        android:layout_height="wrap_content" />
 
     <com.zhpan.sample.banner3d.SensorLayout
-        android:id="@+id/sensor_layout"
+        android:id="@+id/sensor_layout1"
         android:layout_gravity="bottom"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
@@ -24,9 +25,10 @@
             android:id="@+id/iv_foreground"
             android:layout_width="match_parent"
             android:scaleType="fitXY"
+            android:src="@drawable/foreground3"
             android:layout_marginStart="@dimen/dp_16"
             android:layout_marginEnd="@dimen/dp_16"
-            android:layout_height="@dimen/dp_100" />
+            android:layout_height="wrap_content" />
 
     </com.zhpan.sample.banner3d.SensorLayout>
 

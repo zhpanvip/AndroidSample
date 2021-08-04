@@ -24,7 +24,14 @@ class ForegroundAdapter : BaseBannerAdapter<Banner3DData>() {
     holder?.findViewById<ImageView>(R.id.iv_foreground)?.setImageResource(data?.foreground!!)
   }
 
+  override fun getViewType(position: Int): Int {
+    return mList[position].type
+  }
+
   override fun getLayoutId(viewType: Int): Int {
+    if(viewType==1){
+      return R.layout.item_3d_foreground2
+    }
     return R.layout.item_3d_foreground
   }
 }
