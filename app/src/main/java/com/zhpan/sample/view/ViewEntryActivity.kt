@@ -3,6 +3,7 @@ package com.zhpan.sample.view
 import android.content.Intent
 import android.os.Bundle
 import com.zhpan.library.BaseViewBindingActivity
+import com.zhpan.sample.banner3d.Banner3dActivity
 import com.zhpan.sample.databinding.ActivityViewEntryBinding
 import com.zhpan.sample.view.dispatch.DispatchActivity
 import com.zhpan.sample.view.viewpager2.activity.ViewPager2EntryActivity
@@ -15,6 +16,10 @@ class ViewEntryActivity : BaseViewBindingActivity<ActivityViewEntryBinding>() {
         }
         binding.dispatchView.setOnClickListener {
             startActivity(Intent(this, DispatchActivity::class.java))
+        }
+
+        binding.itemBanner.setOnClickListener {
+            startActivity(Intent(this, Banner3dActivity::class.java))
         }
     }
 

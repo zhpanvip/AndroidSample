@@ -16,6 +16,7 @@
         android:layout_width="match_parent"
         android:scaleType="centerCrop"
         android:scaleX="1.3"
+        android:scaleY="1.2"
         android:layout_height="match_parent" />
 
   </com.zhpan.sample.banner3d.SensorLayout>

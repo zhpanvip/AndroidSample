@@ -29,10 +29,6 @@
         <action
             android:id="@+id/action_MainEntryFragment_to_BinderActivity"
             app:destination="@id/BinderActivity" />
-
-        <action
-            android:id="@+id/action_MainEntryFragment_to_Banner3DActivity"
-            app:destination="@id/Banner3DActivity" />
     </fragment>
 
     <activity
@@ -54,12 +50,6 @@
     <activity
         android:id="@+id/JetpackEntryActivity"
         android:name="com.zhpan.sample.jetpack.JetpackEntryActivity"
-        android:label="view_entry"
-        tools:layout="@layout/activity_view_entry" />
-
-    <activity
-        android:id="@+id/Banner3DActivity"
-        android:name="com.zhpan.sample.banner3d.Banner3dActivity"
         android:label="view_entry"
         tools:layout="@layout/activity_view_entry" />
 
