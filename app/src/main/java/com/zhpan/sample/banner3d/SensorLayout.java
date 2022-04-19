@@ -63,14 +63,25 @@ public class SensorLayout extends FrameLayout implements SensorEventListener {
         }
     }
 
+    static final float ALPHA = 0.25f;
+
+    protected float[] lowPass(float[] input, float[] output) {
+        if (output == null)
+            return input;
+        for (int i = 0; i < input.length; i++) {
+            output[i] = output[i] + ALPHA * (input[i] - output[i]);
+        }
+        return output;
+    }
+
 
     @Override
     public void onSensorChanged(SensorEvent event) {
         if (event.sensor.getType() == Sensor.TYPE_ACCELEROMETER) {
-            mAccelerateValues = event.values;
+            mAccelerateValues = lowPass(event.values.clone(), mAccelerateValues);mMagneticValues = event.values;;
         }
         if (event.sensor.getType() == Sensor.TYPE_MAGNETIC_FIELD) {
-            mMagneticValues = event.values;
+            mMagneticValues = lowPass(event.values.clone(), mMagneticValues);
         }
         float[] values = new float[3];
         float[] R = new float[9];
